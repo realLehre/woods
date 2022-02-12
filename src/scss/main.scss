@@ -1,0 +1,125 @@
+@use 'config' as c;
+@use 'screen' as s;
+
+body {
+  background: white;
+  font-family: 'Nunito', sans-serif;
+}
+
+.header {
+  font-family: 'Plus Jakarta Display', sans-serif;
+  background: c.$sec-color;
+  padding: 20px 0;
+
+  & .header-items {
+    @include c.flex(row);
+    max-width: 1400px;
+    margin: 0 auto;
+    color: c.$dark-color;
+
+    & #logo {
+      font-size: map-get(c.$font-sizes, main-contents);
+      font-weight: map-get(c.$font-weight, bold);
+      cursor: pointer;
+      @include c.transition;
+
+      &:hover {
+        color: c.$dark-milk;
+      }
+    }
+
+    & #nav-list {
+      @include c.flex(row);
+      width: 400px;
+
+      & .nav-item {
+        position: relative;
+        font-size: map-get(c.$font-sizes, nav-footer-texts);
+
+        &:first-child:after {
+          position: absolute;
+          content: '';
+          bottom: -2px;
+          left: 50%;
+          transform: translateX(-50%);
+          width: 75%;
+          height: 2px;
+          background: c.$dark-color;
+        }
+
+        &:before {
+          position: absolute;
+          content: '';
+          bottom: -2px;
+          left: 50%;
+          transform: translateX(-50%);
+          width: 0;
+          height: 2px;
+          background: c.$dark-color;
+          @include c.transition;
+        }
+        &:hover::before {
+          width: 75%;
+        }
+      }
+    }
+
+    & #nav-actions {
+      @include c.flex(row);
+      & i {
+        cursor: pointer;
+        @include c.transition;
+
+        &:hover {
+          color: c.$dark-milk;
+        }
+      }
+
+      & i:nth-child(2) {
+        margin-left: 15px;
+      }
+
+      & .nav-toggler {
+        width: 30px;
+        height: 25px;
+        cursor: pointer;
+        @include c.flex(column);
+        display: none;
+
+        &.open .bar {
+          transform: rotate(-42deg);
+        }
+        &.open .start {
+          transform: rotate(-500deg) translate(-0px, -8px);
+        }
+        &.open .end {
+          transform: rotate(-500deg) translate(0px, 8px);
+        }
+
+        & .bar {
+          width: 100%;
+          height: 3px;
+          border-radius: 3px;
+          background: c.$dark-color;
+          transition: all 500ms cubic-bezier(0.37, 0.1, 1, 0.5);
+
+          &:nth-child(odd) {
+            width: 60%;
+          }
+
+          &.start {
+            align-self: flex-start;
+            transform-origin: right;
+          }
+          &.end {
+            align-self: flex-end;
+            transform-origin: left;
+          }
+        }
+      }
+    }
+  }
+}
+
+@include s.tablets;
+@include s.mobiles;

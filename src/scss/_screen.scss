@@ -1,0 +1,126 @@
+@use 'config' as c;
+
+@mixin tablets {
+  @media screen and (max-width: 768px) {
+    .header {
+      & .header-items {
+        & #nav-list {
+          @include c.flex(row);
+          width: 300px;
+        }
+      }
+    }
+  }
+}
+
+@mixin mobiles {
+  @media screen and (max-width: 500px) {
+    .header {
+      & .header-items {
+        & .blocks {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          z-index: 50;
+          @include c.flex(row);
+
+          & .block {
+            height: 100%;
+            width: 100px;
+            background: c.$dark-milk;
+            transform: translateY(-100%);
+            @include c.transition;
+
+            &.drop {
+              transform: translateY(0);
+            }
+          }
+        }
+
+        & #nav-list {
+          position: absolute;
+          background: transparent;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          z-index: 70;
+          @include c.flex(column);
+          transform: translateY(-100%);
+          @include c.transition;
+          align-items: center;
+          justify-content: center;
+          transition-delay: 0.4s;
+          overflow: hidden;
+
+          &.open {
+            transform: translateY(0);
+          }
+
+          & .nav-item {
+            font-size: 30px;
+            // transform: translateX(1000%);
+            @include c.transition;
+
+            &:nth-child(even) {
+              transform: translateX(-400%);
+
+              &.open {
+                transform: translateX(-30px);
+              }
+            }
+            &:nth-child(odd) {
+              transform: translateX(400%);
+              &.open {
+                transform: translateX(30px);
+              }
+            }
+
+            &:not(:last-child) {
+              margin-bottom: 60px;
+            }
+          }
+        }
+
+        & #nav-actions {
+          @include c.flex(row);
+          & i {
+            cursor: pointer;
+            @include c.transition;
+
+            &:hover {
+              color: c.$dark-milk;
+            }
+          }
+
+          & i:nth-child(2) {
+            margin-left: 10px;
+          }
+
+          & .nav-toggler {
+            width: 30px;
+            height: 25px;
+            cursor: pointer;
+            @include c.flex(column);
+            margin-left: 20px;
+            z-index: 100;
+          }
+        }
+      }
+    }
+  }
+}
+
+@for $i from 1 through 5 {
+  .header {
+    & .header-items {
+      & .blocks {
+        & .block:nth-child(#{$i}) {
+          transition-delay: ($i * 0.1s) + 0.1s;
+        }
+      }
+    }
+  }
+}

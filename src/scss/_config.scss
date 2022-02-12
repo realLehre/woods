@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Bellefair&family=Nunito:wght@400;600;700&display=swap');
+@import url('https://cdn.jsdelivr.net/npm/@xz/fonts@1/serve/plus-jakarta-display.min.css');
+
+$maincolor: #623b1c;
+$sec-color: #f6eddd;
+$dark-color: #14120f;
+$dark-milk: #caad8c;
+
+$font-sizes: (
+  'hero-main-text': 64px,
+  'main-contents': 24px,
+  'nav-footer-texts': 18px,
+  'btn-texts': 20px,
+  'section-heading-texts': 48px,
+  'footer-heading': 24px,
+  'copyright-text': 14px,
+  'customer-name': 24px,
+  'customer-attr': 12px,
+);
+
+$font-weight: (
+  'bold': 600,
+  'medium': 300,
+);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: $dark-color;
+}
+
+li {
+  list-style: none;
+}
+
+@mixin flex($direction) {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: $direction;
+}
+
+@mixin transition {
+  transition: all 700ms ease-in-out;
+}
+
+@mixin tablets {
+  @media screen and (max-width: 768px) {
+    @content;
+  }
+}
+
+@mixin mobiles {
+  @media screen and (max-width: 500px) {
+    @content;
+  }
+}
+
+@mixin small-mobiles {
+  @media screen and (max-width: 380px) {
+    @content;
+  }
+}
