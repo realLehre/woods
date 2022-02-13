@@ -49,7 +49,7 @@
           height: 100%;
           z-index: 70;
           @include c.flex(column);
-          transform: translateY(-100%);
+          transform: translateX(-100%);
           @include c.transition;
           align-items: center;
           justify-content: center;
@@ -67,7 +67,6 @@
 
             &:nth-child(even) {
               transform: translateX(-400%);
-
               &.open {
                 transform: translateX(-30px);
               }
