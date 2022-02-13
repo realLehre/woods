@@ -32,6 +32,7 @@
             background: c.$dark-milk;
             transform: translateY(-100%);
             @include c.transition;
+            transition: all 500ms cubic-bezier(0.3, 0.1, 1, 0.5);
 
             &.drop {
               transform: translateY(0);
@@ -118,7 +119,7 @@
     & .header-items {
       & .blocks {
         & .block:nth-child(#{$i}) {
-          transition-delay: ($i * 0.1s) + 0.1s;
+          transition-delay: ($i * 0.2s);
         }
       }
     }

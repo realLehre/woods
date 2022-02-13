@@ -9,7 +9,7 @@ body {
 .header {
   font-family: 'Plus Jakarta Display', sans-serif;
   background: c.$sec-color;
-  padding: 20px 0;
+  padding: 15px 0;
 
   & .header-items {
     @include c.flex(row);
@@ -26,6 +26,10 @@ body {
       &:hover {
         color: c.$dark-milk;
       }
+    }
+
+    & .blocks {
+      display: none;
     }
 
     & #nav-list {
