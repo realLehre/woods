@@ -126,5 +126,39 @@ body {
   }
 }
 
+.hero {
+  max-width: 1400px;
+  width: 80%;
+  margin: 0 auto;
+  padding: 15px 0;
+  @include c.flex(row);
+
+  & .hero-contents {
+    & .hero-heading {
+      font-size: map-get(c.$font-sizes, hero-main-text);
+      line-height: 1;
+    }
+
+    & .hero-copy {
+      font-size: map-get(c.$font-sizes, main-contents);
+    }
+  }
+
+  & .hero-imgs {
+    // width: 500px;
+    @include c.flex(row);
+
+    & img {
+      width: 150px;
+      &:not(:last-child) {
+        margin-right: 20px;
+      }
+      &:nth-child(odd) {
+        transform: translateY(50px);
+      }
+    }
+  }
+}
+
 @include s.tablets;
 @include s.mobiles;

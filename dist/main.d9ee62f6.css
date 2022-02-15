@@ -155,6 +155,39 @@ body {
   transform-origin: left;
 }
 
+.hero {
+  max-width: 1400px;
+  width: 80%;
+  margin: 0 auto;
+  padding: 15px 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+}
+.hero .hero-contents .hero-heading {
+  font-size: 64px;
+  line-height: 1;
+}
+.hero .hero-contents .hero-copy {
+  font-size: 24px;
+}
+.hero .hero-imgs {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+}
+.hero .hero-imgs img {
+  width: 150px;
+}
+.hero .hero-imgs img:not(:last-child) {
+  margin-right: 20px;
+}
+.hero .hero-imgs img:nth-child(odd) {
+  transform: translateY(50px);
+}
+
 @media screen and (max-width: 768px) {
   .header .header-items #nav-list {
     display: flex;
