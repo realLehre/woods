@@ -16,23 +16,23 @@ li {
 }
 
 .header .header-items .blocks .block:nth-child(1) {
-  transition-delay: 0.2s;
+  transition-delay: 0.18s;
 }
 
 .header .header-items .blocks .block:nth-child(2) {
-  transition-delay: 0.4s;
+  transition-delay: 0.36s;
 }
 
 .header .header-items .blocks .block:nth-child(3) {
-  transition-delay: 0.6s;
+  transition-delay: 0.54s;
 }
 
 .header .header-items .blocks .block:nth-child(4) {
-  transition-delay: 0.8s;
+  transition-delay: 0.72s;
 }
 
 .header .header-items .blocks .block:nth-child(5) {
-  transition-delay: 1s;
+  transition-delay: 0.9s;
 }
 
 body {
@@ -180,7 +180,7 @@ body {
   .header .header-items .blocks .block {
     height: 100%;
     width: 100px;
-    background: #caad8c;
+    background: #f6eddd;
     transform: translateY(-100%);
     transition: all 700ms ease-in-out;
     transition: all 500ms cubic-bezier(0.3, 0.1, 1, 0.5);
@@ -208,7 +208,7 @@ body {
     overflow: hidden;
   }
   .header .header-items #nav-list.open {
-    transform: translateY(0);
+    transform: translateX(0);
   }
   .header .header-items #nav-list .nav-item {
     font-size: 30px;

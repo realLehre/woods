@@ -29,7 +29,7 @@
           & .block {
             height: 100%;
             width: 100px;
-            background: c.$dark-milk;
+            background: c.$sec-color;
             transform: translateY(-100%);
             @include c.transition;
             transition: all 500ms cubic-bezier(0.3, 0.1, 1, 0.5);
@@ -57,12 +57,11 @@
           overflow: hidden;
 
           &.open {
-            transform: translateY(0);
+            transform: translateX(0);
           }
 
           & .nav-item {
             font-size: 30px;
-            // transform: translateX(1000%);
             @include c.transition;
 
             &:nth-child(even) {
@@ -118,7 +117,7 @@
     & .header-items {
       & .blocks {
         & .block:nth-child(#{$i}) {
-          transition-delay: ($i * 0.2s);
+          transition-delay: ($i * 0.18s);
         }
       }
     }
