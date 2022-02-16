@@ -6,6 +6,7 @@ const blocks = document.querySelectorAll('.block');
 navBtn.addEventListener('click', () =>{
     navBtn.classList.toggle('open');
     nav.classList.toggle('open');
+
     blocks.forEach(block =>{
         block.classList.toggle('drop');
     })

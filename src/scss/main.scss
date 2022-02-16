@@ -7,15 +7,20 @@ body {
 }
 
 .header {
+  position: fixed;
+  width: 100%;
+  top: 0;
   font-family: 'Plus Jakarta Display', sans-serif;
   background: c.$sec-color;
   padding: 15px 0;
+  z-index: 12;
 
   & .header-items {
-    @include c.flex(row);
     max-width: 1400px;
+    width: 90%;
     margin: 0 auto;
     color: c.$dark-color;
+    @include c.flex(row);
 
     & #logo {
       font-size: map-get(c.$font-sizes, main-contents);
@@ -26,10 +31,6 @@ body {
       &:hover {
         color: c.$dark-milk;
       }
-    }
-
-    & .blocks {
-      display: none;
     }
 
     & #nav-list {
@@ -126,14 +127,44 @@ body {
   }
 }
 
+.blocks {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  & .block {
+    height: 100%;
+    width: 100px;
+    background: c.$sec-color;
+    transform: translateY(-100%);
+    @include c.transition;
+    transition: all 500ms cubic-bezier(0.3, 0.1, 1, 0.5);
+    z-index: 10;
+
+    &.drop {
+      transform: translateY(0);
+    }
+  }
+}
+
+#hero-main {
+  background: c.$sec-color;
+  margin-top: 61px;
+}
 .hero {
   max-width: 1400px;
-  width: 80%;
+  // width: 90%;
   margin: 0 auto;
-  padding: 15px 0;
+  padding: 15px 50px;
   @include c.flex(row);
 
   & .hero-contents {
+    width: 558px;
+    margin-right: 20px;
+    // padding-left: 50px;
     & .hero-heading {
       font-size: map-get(c.$font-sizes, hero-main-text);
       line-height: 1;
@@ -141,20 +172,58 @@ body {
 
     & .hero-copy {
       font-size: map-get(c.$font-sizes, main-contents);
+      margin: 10px 0 20px;
+    }
+
+    & .hero-btn {
+      position: relative;
+      display: inline-block;
+      background: c.$dark-color;
+      padding: 10px 15px;
+      border-radius: 5px;
+      cursor: pointer;
+
+      &:after {
+        position: absolute;
+        content: '';
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: -0;
+        background: c.$dark-milk;
+        border-radius: 5px;
+        @include c.transition;
+        z-index: 1;
+      }
+
+      &:hover:after {
+        height: 100%;
+      }
+
+      & a {
+        position: relative;
+        color: c.$sec-color;
+        z-index: 5;
+      }
     }
   }
 
-  & .hero-imgs {
-    // width: 500px;
-    @include c.flex(row);
+  & .hero-img-container {
+    width: 600px;
+    padding-right: 40px;
+    & .hero-imgs {
+      width: 100%;
+      @include c.flex(row);
 
-    & img {
-      width: 150px;
-      &:not(:last-child) {
-        margin-right: 20px;
-      }
-      &:nth-child(odd) {
-        transform: translateY(50px);
+      & img {
+        width: 33.33%;
+        &:not(:last-child) {
+          margin-right: 20px;
+        }
+        &:nth-child(odd) {
+          z-index: 1;
+          transform: translateY(50px);
+        }
       }
     }
   }
