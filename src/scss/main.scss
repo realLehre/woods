@@ -146,6 +146,7 @@ body {
     height: 100vh;
     width: 100px;
     background: c.$sec-color;
+    border-bottom: 5px solid c.$dark-color;
     // background: red;
     transform: translateY(-100%);
     @include c.transition;
