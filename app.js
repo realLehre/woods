@@ -16,3 +16,11 @@ navBtn.addEventListener('click', () =>{
         navItem.classList.toggle('open');
     })
 })
+
+window.addEventListener('scroll', ()=>{
+    if(window.scrollY > 48){
+        header.classList.add('bottom-border');
+    } else {
+        header.classList.remove('bottom-border')
+    }
+})
