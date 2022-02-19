@@ -56,8 +56,28 @@
 @mixin mobiles {
   @media screen and (max-width: 500px) {
     .header {
+      @include c.transition;
+      transition-delay: 200ms;
+      background: transparent;
+      z-index: 12;
+      padding: 0;
+
+      &.open {
+        height: 100%;
+        width: 100%;
+      }
+
       & .header-items {
         // position: relative;
+        // z-index: 20;
+        background: c.$sec-color;
+        max-width: 1400px;
+        width: 100%;
+        margin: 0 auto;
+        padding: 20px;
+        padding-left: 30px;
+        padding-right: 30px;
+        color: c.$dark-color;
 
         & #nav-list {
           position: absolute;
@@ -66,7 +86,6 @@
           left: 0;
           width: 100%;
           height: 100%;
-          z-index: 70;
           @include c.flex(column);
           transform: translateX(-100%);
           @include c.transition;
@@ -74,7 +93,7 @@
           justify-content: center;
           transition-delay: 0.4s;
           overflow: hidden;
-          // z-index: 20;
+          // z-index: 50;
 
           &.open {
             transform: translateX(0);
@@ -105,8 +124,9 @@
 
         & #nav-actions {
           position: relative;
-          z-index: 120;
           @include c.flex(row);
+          // z-index: 55;
+
           & i {
             cursor: pointer;
             @include c.transition;
@@ -130,11 +150,30 @@
         }
       }
     }
-  }
-}
 
-.blocks {
-  @include c.flex(row);
+    .blocks {
+      @include c.flex(row);
+    }
+
+    .hero {
+      padding: 15px 0px;
+      & .hero-contents {
+        width: 85%;
+        & .hero-heading {
+          font-size: 45px;
+        }
+
+        & .hero-copy {
+          font-size: 18px;
+        }
+      }
+
+      & .hero-img-container {
+        width: 85%;
+        margin-bottom: 100px;
+      }
+    }
+  }
 }
 
 @for $i from 1 through 5 {

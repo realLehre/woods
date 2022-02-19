@@ -118,6 +118,7 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 
   return newRequire;
 })({"app.js":[function(require,module,exports) {
+var header = document.querySelector('.header');
 var navBtn = document.querySelector('.nav-toggler');
 var nav = document.querySelector('#nav-list');
 var navItems = document.querySelectorAll('.nav-item');
@@ -125,6 +126,7 @@ var blocks = document.querySelectorAll('.block');
 navBtn.addEventListener('click', function () {
   navBtn.classList.toggle('open');
   nav.classList.toggle('open');
+  header.classList.toggle('open');
   blocks.forEach(function (block) {
     block.classList.toggle('drop');
   });
