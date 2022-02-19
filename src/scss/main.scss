@@ -97,6 +97,10 @@ body {
         @include c.flex(column);
         display: none;
 
+        &:hover > div {
+          background: c.$dark-milk;
+        }
+
         &.open .bar {
           transform: rotate(-42deg);
         }

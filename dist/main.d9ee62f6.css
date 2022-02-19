@@ -134,6 +134,9 @@ body {
   flex-direction: column;
   display: none;
 }
+.header .header-items #nav-actions .nav-toggler:hover > div {
+  background: #caad8c;
+}
 .header .header-items #nav-actions .nav-toggler.open .bar {
   transform: rotate(-42deg);
 }
