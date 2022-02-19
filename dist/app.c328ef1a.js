@@ -131,7 +131,7 @@ navBtn.addEventListener('click', function () {
     block.classList.toggle('drop');
   });
   navItems.forEach(function (navItem) {
-    navItem.classList.toggle('open');
+    navItem.classList.toggle('slide');
   });
 });
 window.addEventListener('scroll', function () {

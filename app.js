@@ -8,12 +8,12 @@ navBtn.addEventListener('click', () =>{
     navBtn.classList.toggle('open');
     nav.classList.toggle('open');
     header.classList.toggle('open');
-
+  
     blocks.forEach(block =>{
         block.classList.toggle('drop');
     })
     navItems.forEach(navItem =>{
-        navItem.classList.toggle('open');
+        navItem.classList.toggle('slide');
     })
 })
 

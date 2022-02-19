@@ -62,9 +62,10 @@
       background: transparent;
       z-index: 12;
       padding: 0;
+      height: 68px;
 
       &.open {
-        height: 100%;
+        height: 100vh;
         width: 100%;
       }
 
@@ -87,18 +88,19 @@
           top: 0;
           left: 0;
           width: 100%;
-          height: 100%;
+          height: 0;
           @include c.flex(column);
-          transform: translateX(-100%);
+          // transform: translateX(100%);
           @include c.transition;
           align-items: center;
           justify-content: center;
-          transition-delay: 0.4s;
+          // transition-delay: 0.4s;
           overflow: hidden;
           // z-index: 50;
 
           &.open {
-            transform: translateX(0);
+            // transform: translateX(0);
+            height: 100%;
           }
 
           & .nav-item {
@@ -106,15 +108,15 @@
             @include c.transition;
 
             &:nth-child(even) {
-              transform: translateX(-400%);
-              &.open {
-                transform: translateX(-30px);
+              transform: translateX(-300%);
+              &.slide {
+                transform: translateX(30%);
               }
             }
             &:nth-child(odd) {
-              transform: translateX(400%);
-              &.open {
-                transform: translateX(30px);
+              transform: translateX(350%);
+              &.slide {
+                transform: translateX(-30%);
               }
             }
 

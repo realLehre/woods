@@ -50,7 +50,7 @@ body {
   z-index: 12;
 }
 .header.bottom-border {
-  box-shadow: 0 3px 8px #caad8c;
+  box-shadow: -3px 3px 8px #caad8c;
 }
 .header .header-items {
   max-width: 1400px;
@@ -148,7 +148,7 @@ body {
   height: 3px;
   border-radius: 3px;
   background: #14120f;
-  transition: all 1550ms cubic-bezier(0.37, 0.5, 1, 0.5);
+  transition: all 1550ms cubic-bezier(1, 0.1, 0.2, 1);
 }
 .header .header-items #nav-actions .nav-toggler .bar:nth-child(odd) {
   width: 60%;
@@ -321,9 +321,10 @@ body {
     background: transparent;
     z-index: 12;
     padding: 0;
+    height: 68px;
   }
   .header.open {
-    height: 100%;
+    height: 100vh;
     width: 100%;
   }
   .header .header-items {
@@ -340,36 +341,34 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-direction: column;
-    transform: translateX(-100%);
     transition: all 700ms ease-in-out;
     align-items: center;
     justify-content: center;
-    transition-delay: 0.4s;
     overflow: hidden;
   }
   .header .header-items #nav-list.open {
-    transform: translateX(0);
+    height: 100%;
   }
   .header .header-items #nav-list .nav-item {
     font-size: 30px;
     transition: all 700ms ease-in-out;
   }
   .header .header-items #nav-list .nav-item:nth-child(even) {
-    transform: translateX(-400%);
+    transform: translateX(-300%);
   }
-  .header .header-items #nav-list .nav-item:nth-child(even).open {
-    transform: translateX(-30px);
+  .header .header-items #nav-list .nav-item:nth-child(even).slide {
+    transform: translateX(30%);
   }
   .header .header-items #nav-list .nav-item:nth-child(odd) {
-    transform: translateX(400%);
+    transform: translateX(350%);
   }
-  .header .header-items #nav-list .nav-item:nth-child(odd).open {
-    transform: translateX(30px);
+  .header .header-items #nav-list .nav-item:nth-child(odd).slide {
+    transform: translateX(-30%);
   }
   .header .header-items #nav-list .nav-item:not(:last-child) {
     margin-bottom: 60px;
