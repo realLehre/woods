@@ -13,11 +13,10 @@ body {
   top: 0;
   font-family: 'Plus Jakarta Display', sans-serif;
   background: c.$sec-color;
-  padding: 30px 0;
+  padding: 20px 0;
   z-index: 12;
   &.bottom-border {
-    border-bottom: 5px solid red;
-    box-shadow: 10px 10px 10px grey;
+    box-shadow: 0 3px 8px c.$dark-milk;
   }
   & .header-items {
     max-width: 1400px;
@@ -161,10 +160,9 @@ body {
 #hero-main {
   background: c.$sec-color;
   margin-top: 68px;
-  padding-top: 55px;
+  padding-top: 30px;
 }
 .hero {
-  border-top: 1px solid red;
   max-width: 1400px;
   // width: 90%;
   margin: 0 auto;

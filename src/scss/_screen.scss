@@ -14,6 +14,7 @@
 
     .hero {
       @include c.flex(column);
+      padding: 0 35px;
 
       & .hero-contents {
         position: relative;
@@ -21,7 +22,6 @@
         margin-right: 0px;
         text-align: center;
         margin-bottom: 50px;
-        // z-index: 100;
         & .hero-heading {
           font-size: 55px;
         }
@@ -75,9 +75,10 @@
         max-width: 1400px;
         width: 100%;
         margin: 0 auto;
-        padding: 20px;
-        padding-left: 30px;
-        padding-right: 30px;
+        // padding: 20px;
+        // padding-left: 30px;
+        // padding-right: 30px;
+        padding: 20px 35px;
         color: c.$dark-color;
 
         & #nav-list {
@@ -156,9 +157,12 @@
       @include c.flex(row);
     }
 
+    #hero-main {
+      padding-top: 30px;
+    }
+
     .hero {
       & .hero-contents {
-        width: 85%;
         & .hero-heading {
           font-size: 45px;
         }
@@ -169,7 +173,7 @@
       }
 
       & .hero-img-container {
-        width: 85%;
+        width: 100%;
         // margin-bottom: 100px;
       }
     }

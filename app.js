@@ -18,9 +18,10 @@ navBtn.addEventListener('click', () =>{
 })
 
 window.addEventListener('scroll', ()=>{
-    if(window.scrollY > 48){
+    if(window.scrollY > 35 ){
         header.classList.add('bottom-border');
     } else {
         header.classList.remove('bottom-border')
     }
+    console.log(window.scrollY);
 })

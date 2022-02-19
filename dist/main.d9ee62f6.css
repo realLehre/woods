@@ -46,12 +46,11 @@ body {
   top: 0;
   font-family: "Plus Jakarta Display", sans-serif;
   background: #f6eddd;
-  padding: 30px 0;
+  padding: 20px 0;
   z-index: 12;
 }
 .header.bottom-border {
-  border-bottom: 5px solid red;
-  box-shadow: 10px 10px 10px grey;
+  box-shadow: 0 3px 8px #caad8c;
 }
 .header .header-items {
   max-width: 1400px;
@@ -188,11 +187,10 @@ body {
 #hero-main {
   background: #f6eddd;
   margin-top: 68px;
-  padding-top: 55px;
+  padding-top: 30px;
 }
 
 .hero {
-  border-top: 1px solid red;
   max-width: 1400px;
   margin: 0 auto;
   padding: 0px 50px;
@@ -279,6 +277,7 @@ body {
     justify-content: space-between;
     align-items: center;
     flex-direction: column;
+    padding: 0 35px;
   }
   .hero .hero-contents {
     position: relative;
@@ -332,9 +331,7 @@ body {
     max-width: 1400px;
     width: 100%;
     margin: 0 auto;
-    padding: 20px;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding: 20px 35px;
     color: #14120f;
   }
   .header .header-items #nav-list {
@@ -412,9 +409,10 @@ body {
     flex-direction: row;
   }
 
-  .hero .hero-contents {
-    width: 85%;
+  #hero-main {
+    padding-top: 30px;
   }
+
   .hero .hero-contents .hero-heading {
     font-size: 45px;
   }
@@ -422,7 +420,7 @@ body {
     font-size: 18px;
   }
   .hero .hero-img-container {
-    width: 85%;
+    width: 100%;
   }
 }
 
