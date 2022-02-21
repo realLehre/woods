@@ -64,6 +64,45 @@
         }
       }
     }
+
+    .products-desc {
+      padding: 0 35px;
+
+      #{&}-container {
+        @include c.flex(column);
+
+        & .products-desc-contents {
+          text-align: center;
+          width: 100%;
+
+          & .products-desc-heading {
+            font-size: map-get(c.$font-sizes, section-heading-texts-mobile);
+          }
+
+          & .products-desc-copy {
+            font-size: map-get(c.$font-sizes, main-contents-mobile);
+            margin: 12px 0;
+          }
+        }
+
+        & .products-desc-img {
+          width: 438px;
+          margin-top: -30px;
+        }
+      }
+
+      & .products-shelf {
+        flex-direction: row-reverse;
+        @include c.flex(column);
+        margin-top: 50px;
+
+        & .products-desc-img {
+          width: 300px;
+          margin-right: 0px;
+          margin-top: 30px;
+        }
+      }
+    }
   }
 }
 
@@ -78,7 +117,7 @@
       height: 68px;
 
       &.open {
-        height: 100vh;
+        height: 100%;
         width: 100%;
       }
 
@@ -196,6 +235,68 @@
       & .hero-img-container {
         width: 100%;
         // margin-bottom: 100px;
+      }
+    }
+
+    .products {
+      padding: 0 35px;
+
+      #{&}-number {
+        font-size: map-get(c.$font-sizes, hero-main-text-mobile);
+
+        & span {
+          margin-top: -10px;
+          font-size: map-get(c.$font-sizes, main-contents-mobile);
+        }
+      }
+    }
+
+    .products-desc {
+      padding: 0 35px;
+
+      #{&}-container {
+        @include c.flex(column);
+
+        & .products-desc-contents {
+          text-align: center;
+          width: 100%;
+
+          & .products-desc-heading {
+            font-size: map-get(c.$font-sizes, section-heading-texts-mobile);
+          }
+
+          & .products-desc-copy {
+            font-size: map-get(c.$font-sizes, main-contents-mobile);
+            margin: 12px 0;
+          }
+
+          & .products-desc-btn {
+            & a {
+              font-size: map-get(c.$font-sizes, btn-texts-mobile);
+
+              & span {
+                margin-left: 10px;
+              }
+            }
+          }
+        }
+
+        & .products-desc-img {
+          width: 438px;
+          margin-top: -30px;
+        }
+      }
+
+      & .products-shelf {
+        flex-direction: row-reverse;
+        @include c.flex(column);
+        margin-top: 50px;
+
+        & .products-desc-img {
+          width: 300px;
+          margin-right: 0px;
+          margin-top: 30px;
+        }
       }
     }
   }
