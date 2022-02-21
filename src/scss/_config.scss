@@ -46,6 +46,35 @@ li {
   flex-direction: $direction;
 }
 
+@mixin btn {
+  position: relative;
+  background: c.$maincolor;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+
+  &:after {
+    position: absolute;
+    content: '';
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: -0;
+    background: c.$dark-milk;
+    border-radius: 5px;
+    @include c.transition;
+    z-index: 1;
+  }
+
+  &:hover:after {
+    height: 100%;
+  }
+  & a {
+    font-size: map-get(c.$font-sizes, btn-texts);
+    color: c.$sec-color;
+  }
+}
+
 @mixin transition {
   transition: all 700ms ease-in-out;
 }

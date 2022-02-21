@@ -218,6 +218,7 @@ body {
       }
 
       & a {
+        font-size: map-get(c.$font-sizes, btn-texts);
         position: relative;
         color: c.$sec-color;
         z-index: 5;

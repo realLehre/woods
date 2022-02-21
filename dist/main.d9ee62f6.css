@@ -241,6 +241,7 @@ body {
   height: 100%;
 }
 .hero .hero-contents .hero-btn a {
+  font-size: 20px;
   position: relative;
   color: #f6eddd;
   z-index: 5;
@@ -422,6 +423,9 @@ body {
   }
   .hero .hero-contents .hero-copy {
     font-size: 18px;
+  }
+  .hero .hero-contents .hero-btn a {
+    font-size: 16px;
   }
   .hero .hero-img-container {
     width: 100%;

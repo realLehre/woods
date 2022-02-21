@@ -172,6 +172,12 @@
         & .hero-copy {
           font-size: 18px;
         }
+
+        & .hero-btn {
+          & a {
+            font-size: 16px;
+          }
+        }
       }
 
       & .hero-img-container {
