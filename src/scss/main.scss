@@ -248,7 +248,7 @@ body {
 }
 
 #products-main {
-  margin-top: 80px;
+  margin: 80px 0;
 }
 
 .products {
@@ -259,7 +259,7 @@ body {
 
   #{&}-number {
     @include c.flex(column);
-    align-items: flex-start;
+    align-items: center;
     color: c.$maincolor;
     @include c.secFont;
     font-size: map-get(c.$font-sizes, hero-main-text);
@@ -273,10 +273,13 @@ body {
   #{&}-brands {
     margin-top: 20px;
     width: 100%;
-    display: grid;
-    grid-gap: 10px;
-    align-items: center;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    // display: grid;
+    // row-gap: 15px;
+    // column-gap: 10px;
+    // align-items: center;
+    // grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    @include c.flex(row);
+    flex-wrap: wrap;
 
     & img {
       width: 155px;

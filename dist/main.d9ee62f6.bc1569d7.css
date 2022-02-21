@@ -269,7 +269,7 @@ body {
 }
 
 #products-main {
-  margin-top: 80px;
+  margin: 80px 0;
 }
 
 .products {
@@ -286,7 +286,7 @@ body {
   justify-content: space-between;
   align-items: center;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   color: #623b1c;
   font-family: "Plus Jakarta Display", sans-serif;
   font-size: 64px;
@@ -298,10 +298,11 @@ body {
 .products .products-brands {
   margin-top: 20px;
   width: 100%;
-  display: grid;
-  grid-gap: 10px;
+  display: flex;
+  justify-content: space-between;
   align-items: center;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 .products .products-brands img {
   width: 155px;
