@@ -8,7 +8,9 @@ $dark-milk: #caad8c;
 
 $font-sizes: (
   'hero-main-text': 64px,
+  'hero-main-text-mobile': 55px,
   'main-contents': 24px,
+  'main-contents-mobile': 20px,
   'nav-footer-texts': 18px,
   'btn-texts': 20px,
   'section-heading-texts': 48px,
@@ -22,6 +24,10 @@ $font-weight: (
   'bold': 600,
   'medium': 300,
 );
+
+@mixin secFont {
+  font-family: 'Plus Jakarta Display', sans-serif;
+}
 
 * {
   margin: 0;
