@@ -290,7 +290,7 @@ body {
   justify-content: space-between;
   align-items: center;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   color: #623b1c;
   font-family: "Plus Jakarta Display", sans-serif;
   font-size: 64px;
@@ -609,6 +609,10 @@ body {
   .products .products-number span {
     margin-top: -10px;
     font-size: 20px;
+  }
+  .products .products-brands img {
+    width: 120px;
+    cursor: pointer;
   }
 
   .products-desc {

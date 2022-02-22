@@ -249,6 +249,13 @@
           font-size: map-get(c.$font-sizes, main-contents-mobile);
         }
       }
+
+      #{&}-brands {
+        & img {
+          width: 120px;
+          cursor: pointer;
+        }
+      }
     }
 
     .products-desc {
