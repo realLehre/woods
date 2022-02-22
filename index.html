@@ -8,6 +8,7 @@
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.0.7/css/all.css"
     /> -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.12.1/css/all.css"
@@ -79,9 +80,11 @@
 
     <section id="products-main">
       <div class="products">
-        <div class="products-number">120+ <span>Branded products</span></div>
+        <div class="products-number" data-aos="fade-down">
+          120+ <span>Branded products</span>
+        </div>
 
-        <div class="products-brands">
+        <div class="products-brands" data-aos="fade-up">
           <img src="./img/Furniture Brands International Logo.png" alt="" />
           <img src="./img/Kronheimsfurniture Logo undefined.png" alt="" />
           <img src="./img/Booking.com Logo.png" alt="" />
@@ -94,7 +97,10 @@
     <section id="products-desc-main">
       <div class="products-desc">
         <div class="products-desc-container products-table">
-          <div class="products-desc-contents products-table-contents">
+          <div
+            class="products-desc-contents products-table-contents"
+            data-aos="slide-right"
+          >
             <h3 class="products-desc-heading products-table-heading">
               Coffee Table
             </h3>
@@ -110,13 +116,19 @@
             </div>
           </div>
 
-          <div class="products-desc-img products-table-img">
+          <div
+            class="products-desc-img products-table-img"
+            data-aos="slide-left"
+          >
             <img src="./img/unsplash_wjPIu24U1yM.png" alt="" />
           </div>
         </div>
 
         <div class="products-desc-container products-shelf">
-          <div class="products-desc-contents products-shelf-contents">
+          <div
+            class="products-desc-contents products-shelf-contents"
+            data-aos="flip-left"
+          >
             <h3 class="products-desc-heading products-shelf-heading">
               The Shelf
             </h3>
@@ -133,13 +145,20 @@
             </div>
           </div>
 
-          <div class="products-desc-img products-shelf-img">
+          <div
+            class="products-desc-img products-shelf-img"
+            data-aos="flip-right"
+          >
             <img src="./img/unsplash_xI5JeM-Lk7I.png" alt="" />
           </div>
         </div>
       </div>
     </section>
 
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
     <script src="app.js"></script>
   </body>
 </html>

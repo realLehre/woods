@@ -35,6 +35,10 @@ li {
   transition-delay: 0.9s;
 }
 
+body[data-aos-easing=new-easing] [data-aos], [data-aos][data-aos][data-aos-easing=new-easing] {
+  transition-timing-function: cubic-bezier(0.25, 0.25, 0.75, 0.75);
+}
+
 body {
   background: white;
   font-family: "Nunito", sans-serif;

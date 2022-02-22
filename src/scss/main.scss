@@ -1,6 +1,12 @@
 @use 'config' as c;
 @use 'screen' as s;
 
+[data-aos] {
+  body[data-aos-easing='new-easing'] &,
+  &[data-aos][data-aos-easing='new-easing'] {
+    transition-timing-function: cubic-bezier(0.25, 0.25, 0.75, 0.75);
+  }
+}
 body {
   background: white;
   font-family: 'Nunito', sans-serif;
