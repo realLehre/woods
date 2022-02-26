@@ -404,8 +404,10 @@ body {
   flex-direction: row;
   width: 100%;
   color: #623b1c;
+  margin-bottom: 20px;
 }
 #products-display .products-display-heading h4 {
+  font-family: "Plus Jakarta Display", sans-serif;
   font-size: 48px;
 }
 #products-display .products-display-heading p a {
@@ -415,6 +417,26 @@ body {
 }
 #products-display .products-display-heading p a:hover {
   color: #caad8c;
+}
+#products-display .products-display-imgs {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+}
+#products-display .products-display-imgs .products-display-img {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+#products-display .products-display-imgs .products-display-img img {
+  width: 250px;
+  margin-bottom: 10px;
+}
+#products-display .products-display-imgs .products-display-img p {
+  font-size: 24px;
 }
 
 @media screen and (max-width: 768px) {

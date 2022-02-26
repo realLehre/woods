@@ -380,8 +380,10 @@ body {
     @include c.flex(row);
     width: 100%;
     color: c.$maincolor;
+    margin-bottom: 20px;
 
     & h4 {
+      @include c.secFont;
       font-size: map-get(c.$font-sizes, section-heading-texts);
     }
 
@@ -392,6 +394,25 @@ body {
 
       &:hover {
         color: c.$dark-milk;
+      }
+    }
+  }
+
+  .products-display-imgs {
+    @include c.flex(row);
+    width: 100%;
+
+    & .products-display-img {
+      @include c.flex(column);
+      // width: 100%;
+
+      & img {
+        width: 250px;
+        margin-bottom: 10px;
+      }
+
+      & p {
+        font-size: map-get(c.$font-sizes, main-contents);
       }
     }
   }
