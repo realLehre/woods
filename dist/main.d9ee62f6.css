@@ -410,6 +410,9 @@ body {
   font-family: "Plus Jakarta Display", sans-serif;
   font-size: 48px;
 }
+#products-display .products-display-heading p {
+  cursor: pointer;
+}
 #products-display .products-display-heading p a {
   color: #623b1c;
   font-weight: 600;
@@ -435,21 +438,6 @@ body {
   width: 250px;
   margin-bottom: 5px;
   cursor: pointer;
-}
-#products-display .products-display-imgs .products-display-img img:after {
-  position: absolute;
-  content: "";
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 0;
-  background: #caad8c;
-  border-radius: 5px;
-  transition: all 700ms ease-in-out;
-  z-index: 1;
-}
-#products-display .products-display-imgs .products-display-img img:hover:after {
-  height: 100%;
 }
 #products-display .products-display-imgs .products-display-img p {
   font-size: 24px;
@@ -554,6 +542,10 @@ body {
     width: 300px;
     margin-right: 0px;
     margin-top: 30px;
+  }
+
+  #products-display .products-display-heading h4 {
+    font-size: 40px;
   }
 }
 @media screen and (max-width: 500px) {
@@ -725,6 +717,52 @@ body {
     width: 300px;
     margin-right: 0px;
     margin-top: 30px;
+  }
+
+  #products-display .products-display-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+  }
+  #products-display .products-display-heading h4 {
+    font-size: 40px;
+    margin-bottom: 20px;
+  }
+  #products-display .products-display-heading p {
+    background: #caad8c;
+    padding: 2px 5px;
+    border-radius: 5px;
+    transition: all 700ms ease-in-out;
+  }
+  #products-display .products-display-heading p:hover {
+    color: #14120f;
+    transform: scale(1.2);
+  }
+  #products-display .products-display-heading p a {
+    pointer-events: none;
+  }
+  #products-display .products-display-imgs {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    width: 100%;
+    row-gap: 25px;
+  }
+  #products-display .products-display-imgs .products-display-img {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+  }
+  #products-display .products-display-imgs .products-display-img img {
+    position: relative;
+    width: 300px;
+    margin-bottom: 5px;
+    cursor: pointer;
+  }
+  #products-display .products-display-imgs .products-display-img p {
+    font-size: 20px;
   }
 }
 
