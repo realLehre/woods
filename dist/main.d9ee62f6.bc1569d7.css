@@ -422,6 +422,7 @@ body {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   width: 100%;
+  row-gap: 25px;
 }
 #products-display .products-display-imgs .products-display-img {
   display: flex;
@@ -431,10 +432,12 @@ body {
 }
 #products-display .products-display-imgs .products-display-img img {
   width: 250px;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
+  cursor: pointer;
 }
 #products-display .products-display-imgs .products-display-img p {
   font-size: 24px;
+  font-weight: 600;
 }
 
 @media screen and (max-width: 768px) {
