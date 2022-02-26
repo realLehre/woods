@@ -370,5 +370,32 @@ body {
   }
 }
 
+#products-display {
+  max-width: 1400px;
+  @include c.flex(column);
+  padding: 0 60px;
+  margin-bottom: 50px;
+
+  & .products-display-heading {
+    @include c.flex(row);
+    width: 100%;
+    color: c.$maincolor;
+
+    & h4 {
+      font-size: map-get(c.$font-sizes, section-heading-texts);
+    }
+
+    & p a {
+      color: c.$maincolor;
+      font-weight: 600;
+      @include c.transition;
+
+      &:hover {
+        color: c.$dark-milk;
+      }
+    }
+  }
+}
+
 @include s.tablets;
 @include s.mobiles;

@@ -388,6 +388,35 @@ body {
   margin-right: 30px;
 }
 
+#products-display {
+  max-width: 1400px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  padding: 0 60px;
+  margin-bottom: 50px;
+}
+#products-display .products-display-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+  color: #623b1c;
+}
+#products-display .products-display-heading h4 {
+  font-size: 48px;
+}
+#products-display .products-display-heading p a {
+  color: #623b1c;
+  font-weight: 600;
+  transition: all 700ms ease-in-out;
+}
+#products-display .products-display-heading p a:hover {
+  color: #caad8c;
+}
+
 @media screen and (max-width: 768px) {
   .header .header-items #nav-list {
     display: flex;
