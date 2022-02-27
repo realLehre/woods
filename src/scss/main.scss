@@ -431,13 +431,52 @@ body {
 
 #interior {
   max-width: 1400px;
-  @include c.flex(row);
   padding: 0 60px;
   margin-bottom: 50px;
 }
 
 .interior-container {
-  @include flex(row);
+  width: 100%;
+  @include c.flex(row);
+
+  & .interior-left {
+    & img {
+      width: 450px;
+    }
+  }
+
+  & .interior-right {
+    & .interior-copy {
+      width: 500px;
+      color: c.$maincolor;
+      margin-bottom: 50px;
+
+      & h4 {
+        font-size: map-get(c.$font-sizes, section-heading-texts);
+        @include c.secFont;
+        line-height: 50px;
+      }
+
+      & p {
+        font-size: map-get(c.$font-sizes, main-contents);
+        margin: 30px 0;
+      }
+
+      & a {
+        position: relative;
+        display: inline-block;
+        background: c.$maincolor;
+        color: white;
+        padding: 8px 25px;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+    }
+
+    & img {
+      width: 500px;
+    }
+  }
 }
 
 @include s.tablets;
