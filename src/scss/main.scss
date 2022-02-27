@@ -429,5 +429,16 @@ body {
   }
 }
 
+#interior {
+  max-width: 1400px;
+  @include c.flex(row);
+  padding: 0 60px;
+  margin-bottom: 50px;
+}
+
+.interior-container {
+  @include flex(row);
+}
+
 @include s.tablets;
 @include s.mobiles;
