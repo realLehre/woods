@@ -90,6 +90,12 @@ li {
   transition: all 700ms ease-in-out;
 }
 
+@mixin small-PCs {
+  @media screen and (max-width: 1090px) {
+    @content;
+  }
+}
+
 @mixin tablets {
   @media screen and (max-width: 768px) {
     @content;

@@ -438,6 +438,7 @@ body {
 .interior-container {
   width: 100%;
   @include c.flex(row);
+  flex-wrap: wrap;
 
   & .interior-left {
     width: 450px;
@@ -506,5 +507,6 @@ body {
   }
 }
 
+@include s.small-PCs;
 @include s.tablets;
 @include s.mobiles;

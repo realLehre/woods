@@ -1,5 +1,43 @@
 @use 'config' as c;
 
+@mixin small-PCs {
+  @media screen and (max-width: 1090px) {
+    #interior {
+      padding: 0 60px;
+      margin-bottom: 50px;
+    }
+
+    .interior-container {
+      width: 100%;
+
+      & .interior-left {
+        display: none;
+      }
+
+      & .interior-right {
+        width: 100%;
+        @include c.flex(row);
+        & .interior-copy {
+          width: 100%;
+
+          & h4 {
+            font-size: map-get(c.$font-sizes, section-heading-texts);
+          }
+
+          & p {
+            font-size: map-get(c.$font-sizes, main-contents);
+          }
+        }
+
+        & .interior-right-img {
+          margin-left: 50px;
+          width: 500px;
+        }
+      }
+    }
+  }
+}
+
 @mixin tablets {
   @media screen and (max-width: 768px) {
     .header {
@@ -108,6 +146,40 @@
       & .products-display-heading {
         & h4 {
           font-size: map-get(c.$font-sizes, section-heading-texts-mobile);
+        }
+      }
+    }
+
+    #interior {
+      padding: 0 60px;
+      margin-bottom: 50px;
+    }
+
+    .interior-container {
+      width: 100%;
+
+      & .interior-left {
+        display: none;
+      }
+
+      & .interior-right {
+        width: 100%;
+        @include c.flex(column);
+        & .interior-copy {
+          width: 100%;
+
+          & h4 {
+            font-size: map-get(c.$font-sizes, section-heading-texts);
+          }
+
+          & p {
+            font-size: map-get(c.$font-sizes, main-contents);
+          }
+        }
+
+        & .interior-right-img {
+          margin-left: 50px;
+          width: 500px;
         }
       }
     }
