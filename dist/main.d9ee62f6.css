@@ -521,6 +521,54 @@ body {
   margin-bottom: 50px;
 }
 
+#newsletter {
+  max-width: 1400px;
+  padding: 0 60px;
+  margin-bottom: 50px;
+}
+
+.newsletter-container {
+  width: 700px;
+  margin: 0 auto;
+  color: #623b1c;
+  text-align: center;
+}
+.newsletter-container h4 {
+  font-size: 48px;
+  font-family: "Plus Jakarta Display", sans-serif;
+  line-height: 50px;
+}
+.newsletter-container p {
+  font-size: 24px;
+  margin: 30px 0;
+}
+.newsletter-container form {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+.newsletter-container form input {
+  width: 70%;
+  padding: 8px 20px;
+  outline: none;
+  border: 1.5px solid #623b1c;
+  border-radius: 5px;
+}
+.newsletter-container form input::placeholder {
+  color: #623b1c;
+  opacity: 0.8;
+}
+.newsletter-container form button {
+  display: inline-block;
+  background: #623b1c;
+  padding: 5px 20px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
 @media screen and (max-width: 1090px) {
   #interior {
     padding: 0 35px;

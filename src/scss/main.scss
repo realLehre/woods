@@ -514,6 +514,55 @@ body {
   margin-bottom: 50px;
 }
 
+#newsletter {
+  max-width: 1400px;
+  padding: 0 60px;
+  margin-bottom: 50px;
+}
+.newsletter-container {
+  width: 700px;
+  margin: 0 auto;
+  color: c.$maincolor;
+  text-align: center;
+  & h4 {
+    font-size: map-get(c.$font-sizes, section-heading-texts);
+    @include c.secFont;
+    line-height: 50px;
+  }
+
+  & p {
+    font-size: map-get(c.$font-sizes, main-contents);
+    margin: 30px 0;
+  }
+
+  & form {
+    width: 100%;
+    @include c.flex(row);
+
+    & input {
+      width: 70%;
+      padding: 8px 20px;
+      outline: none;
+      border: 1.5px solid c.$maincolor;
+      border-radius: 5px;
+
+      &::placeholder {
+        color: c.$maincolor;
+        opacity: 0.8;
+      }
+    }
+    & button {
+      display: inline-block;
+      background: c.$maincolor;
+      padding: 5px 20px;
+      border-radius: 5px;
+
+      border: none;
+      cursor: pointer;
+    }
+  }
+}
+
 @include s.small-PCs;
 @include s.tablets;
 @include s.mobiles;
