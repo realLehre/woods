@@ -514,6 +514,13 @@ body {
   width: 100%;
 }
 
+#testimonials {
+  width: 100%;
+  height: 400px;
+  background: #caad8c;
+  margin-bottom: 50px;
+}
+
 @media screen and (max-width: 1090px) {
   #interior {
     padding: 0 35px;
