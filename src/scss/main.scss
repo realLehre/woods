@@ -515,12 +515,10 @@ body {
 }
 
 #newsletter {
-  max-width: 1400px;
-  padding: 0 60px;
-  margin-bottom: 50px;
+  padding: 0 30px;
 }
 .newsletter-container {
-  width: 700px;
+  width: 80%;
   margin: 0 auto;
   color: c.$maincolor;
   text-align: center;
@@ -532,12 +530,14 @@ body {
 
   & p {
     font-size: map-get(c.$font-sizes, main-contents);
-    margin: 30px 0;
+    margin: 30px auto;
+    width: 100%;
   }
 
   & form {
-    width: 100%;
+    width: 70%;
     @include c.flex(row);
+    margin: 0 auto;
 
     & input {
       width: 70%;
@@ -554,11 +554,13 @@ body {
     & button {
       display: inline-block;
       background: c.$maincolor;
-      padding: 5px 20px;
+      padding: 7px 30px;
       border-radius: 5px;
-
+      color: white;
+      font-size: map-get(c.$font-sizes, btn-texts);
       border: none;
       cursor: pointer;
+      margin-left: 20px;
     }
   }
 }
