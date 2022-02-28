@@ -574,6 +574,12 @@ body {
   margin-left: 20px;
 }
 
+footer {
+  background: #623b1c;
+  width: 100%;
+  height: 500px;
+}
+
 @media screen and (max-width: 1090px) {
   #interior {
     padding: 0 35px;
