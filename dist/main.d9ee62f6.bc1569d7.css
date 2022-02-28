@@ -522,11 +522,13 @@ body {
 }
 
 #newsletter {
-  padding: 0 30px;
+  max-width: 1400px;
+  padding: 0 60px;
+  margin-bottom: 50px;
 }
 
 .newsletter-container {
-  width: 80%;
+  width: 100%;
   margin: 0 auto;
   color: #623b1c;
   text-align: center;
@@ -539,7 +541,7 @@ body {
 .newsletter-container p {
   font-size: 24px;
   margin: 30px auto;
-  width: 100%;
+  width: 70%;
 }
 .newsletter-container form {
   width: 70%;
@@ -740,16 +742,11 @@ body {
   }
 
   #newsletter {
-    max-width: 1400px;
-    padding: 0 60px;
-    margin-bottom: 50px;
+    padding: 0 30px;
   }
 
   .newsletter-container {
     width: 80%;
-    margin: 0 auto;
-    color: #623b1c;
-    text-align: center;
   }
   .newsletter-container h4 {
     font-size: 48px;
@@ -759,31 +756,19 @@ body {
   .newsletter-container p {
     font-size: 24px;
     margin: 30px auto;
-    width: 60%;
+    width: 100%;
   }
   .newsletter-container form {
-    width: 70%;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-direction: column;
-    margin: 0 auto;
   }
   .newsletter-container form input {
     width: 100%;
-    padding: 8px 20px;
-    outline: none;
-    border: 1.5px solid #623b1c;
-    border-radius: 5px;
-  }
-  .newsletter-container form input::placeholder {
-    color: #623b1c;
-    opacity: 0.8;
   }
   .newsletter-container form button {
-    display: block;
-    background: #623b1c;
-    padding: 7px 30px;
     width: 100%;
     margin-left: 0px;
     margin-top: 10px;
@@ -1025,6 +1010,39 @@ body {
   }
   .interior-container .interior-right .interior-right-img {
     margin-left: 0px;
+  }
+
+  #newsletter {
+    padding: 0 30px;
+  }
+
+  .newsletter-container {
+    width: 100%;
+  }
+  .newsletter-container h4 {
+    font-size: 40px;
+    font-family: "Plus Jakarta Display", sans-serif;
+    line-height: 50px;
+  }
+  .newsletter-container p {
+    font-size: 20px;
+    margin: 30px auto;
+    width: 100%;
+  }
+  .newsletter-container form {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+  }
+  .newsletter-container form input {
+    width: 100%;
+  }
+  .newsletter-container form button {
+    width: 100%;
+    margin-left: 0px;
+    margin-top: 10px;
   }
 }
 

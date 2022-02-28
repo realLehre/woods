@@ -182,15 +182,10 @@
     }
 
     #newsletter {
-      max-width: 1400px;
-      padding: 0 60px;
-      margin-bottom: 50px;
+      padding: 0 30px;
     }
     .newsletter-container {
       width: 80%;
-      margin: 0 auto;
-      color: c.$maincolor;
-      text-align: center;
       & h4 {
         font-size: map-get(c.$font-sizes, section-heading-texts);
         @include c.secFont;
@@ -200,30 +195,17 @@
       & p {
         font-size: map-get(c.$font-sizes, main-contents);
         margin: 30px auto;
-        width: 60%;
+        width: 100%;
       }
 
       & form {
-        width: 70%;
+        width: 100%;
         @include c.flex(column);
-        margin: 0 auto;
 
         & input {
           width: 100%;
-          padding: 8px 20px;
-          outline: none;
-          border: 1.5px solid c.$maincolor;
-          border-radius: 5px;
-
-          &::placeholder {
-            color: c.$maincolor;
-            opacity: 0.8;
-          }
         }
         & button {
-          display: block;
-          background: c.$maincolor;
-          padding: 7px 30px;
           width: 100%;
           margin-left: 0px;
           margin-top: 10px;
@@ -505,6 +487,38 @@
 
         & .interior-right-img {
           margin-left: 0px;
+        }
+      }
+    }
+
+    #newsletter {
+      padding: 0 30px;
+    }
+    .newsletter-container {
+      width: 100%;
+      & h4 {
+        font-size: map-get(c.$font-sizes, section-heading-texts-mobile);
+        @include c.secFont;
+        line-height: 50px;
+      }
+
+      & p {
+        font-size: map-get(c.$font-sizes, main-contents-mobile);
+        margin: 30px auto;
+        width: 100%;
+      }
+
+      & form {
+        width: 100%;
+        @include c.flex(column);
+
+        & input {
+          width: 100%;
+        }
+        & button {
+          width: 100%;
+          margin-left: 0px;
+          margin-top: 10px;
         }
       }
     }
