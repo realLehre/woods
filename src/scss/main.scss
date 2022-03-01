@@ -518,9 +518,11 @@ body {
   max-width: 1400px;
   padding: 0 60px;
   margin-bottom: 50px;
+  background: white;
 }
 .newsletter-container {
   width: 100%;
+  padding: 50px 0;
   margin: 0 auto;
   color: c.$maincolor;
   text-align: center;
@@ -615,6 +617,10 @@ footer {
 
             &:hover {
               color: c.$dark-milk;
+            }
+
+            & i {
+              margin-right: 15px;
             }
           }
         }
