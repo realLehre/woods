@@ -12,6 +12,17 @@ body {
   font-family: 'Nunito', sans-serif;
 }
 
+.arrow {
+  margin-top: -100px;
+  width: 500px;
+  & img {
+    width: 100%;
+  }
+}
+.arrow.right {
+  margin-left: auto;
+}
+
 .header {
   position: fixed;
   // height: 58px;
@@ -511,18 +522,25 @@ body {
   width: 100%;
   height: 400px;
   background: c.$dark-milk;
-  margin-bottom: 50px;
 }
 
 #newsletter {
   max-width: 1400px;
   padding: 0 60px;
-  margin-bottom: 50px;
   background: white;
+  position: relative;
+
+  & .arrow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 300px;
+    margin-top: -30px;
+  }
 }
 .newsletter-container {
   width: 100%;
-  padding: 50px 0;
+  padding: 100px 0;
   margin: 0 auto;
   color: c.$maincolor;
   text-align: center;

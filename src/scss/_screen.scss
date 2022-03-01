@@ -40,6 +40,9 @@
 
 @mixin tablets {
   @media screen and (max-width: 768px) {
+    .arrow {
+      display: none;
+    }
     .header {
       // padding: 30px 0;
       & .header-items {
