@@ -607,15 +607,20 @@
 }
 
 @mixin small-mobiles {
-  @media screen and (max-width: 380px) {
+  @media screen and (max-width: 420px) {
     #products-display {
       .products-display-imgs {
         margin-top: 20px;
         grid-template-columns: repeat(2, 1fr);
+        grid-gap: 10px;
 
+        & .third,
+        & .fourth {
+          margin-top: 10px;
+        }
         & .products-display-img {
           & img {
-            width: 160px;
+            width: 100%;
           }
 
           & p {
