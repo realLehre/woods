@@ -576,8 +576,32 @@ body {
 
 footer {
   background: #623b1c;
-  width: 100%;
-  height: 500px;
+  max-width: 1400px;
+  padding: 50px 60px;
+  color: white;
+  font-family: "Plus Jakarta Display", sans-serif;
+}
+
+.top-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  align-items: flex-start;
+}
+.top-footer .footer-heading {
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+.top-footer .footer-left .footer-texts {
+  font-weight: 10;
+}
+.top-footer .footer-right {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  align-items: flex-start;
 }
 
 @media screen and (max-width: 1090px) {

@@ -569,8 +569,30 @@ body {
 
 footer {
   background: c.$maincolor;
-  width: 100%;
-  height: 500px;
+  max-width: 1400px;
+  padding: 50px 60px;
+  color: white;
+  @include c.secFont;
+}
+
+.top-footer {
+  @include c.flex(row);
+  align-items: flex-start;
+
+  .footer-heading {
+    font-weight: 600;
+    margin-bottom: 30px;
+  }
+  & .footer-left {
+    & .footer-texts {
+      font-weight: 10;
+    }
+  }
+
+  & .footer-right {
+    @include c.flex(row);
+    align-items: flex-start;
+  }
 }
 
 @include s.small-PCs;
