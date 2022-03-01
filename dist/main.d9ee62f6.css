@@ -818,6 +818,28 @@ footer {
     margin-left: 0px;
     margin-top: 10px;
   }
+
+  footer {
+    padding: 50px 30px;
+  }
+
+  .top-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .top-footer .footer-heading {
+    margin-bottom: 10px;
+  }
+  .top-footer .footer-left .footer-texts {
+    width: 100%;
+  }
+  .top-footer .footer-right {
+    margin-top: 30px;
+    width: 100%;
+  }
 }
 @media screen and (max-width: 500px) {
   .header {

@@ -212,6 +212,29 @@
         }
       }
     }
+
+    footer {
+      padding: 50px 30px;
+    }
+
+    .top-footer {
+      @include c.flex(column);
+      align-items: flex-start;
+
+      .footer-heading {
+        margin-bottom: 10px;
+      }
+      & .footer-left {
+        & .footer-texts {
+          width: 100%;
+        }
+      }
+
+      & .footer-right {
+        margin-top: 30px;
+        width: 100%;
+      }
+    }
   }
 }
 
