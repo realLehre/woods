@@ -617,6 +617,34 @@ footer {
   font-size: 13px;
   font-weight: 100;
   color: white;
+  transition: all 700ms ease-in-out;
+}
+.top-footer .footer-right .footer-item .footer-lists .footer-sub a:hover {
+  color: #caad8c;
+}
+
+.bottom-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+  margin-top: 120px;
+}
+.bottom-footer .copy {
+  font-size: 13px;
+}
+.bottom-footer .copy span {
+  margin-left: 2px;
+}
+.bottom-footer .media i {
+  cursor: pointer;
+}
+.bottom-footer .media i:hover {
+  color: #caad8c;
+}
+.bottom-footer .media i:not(:last-child) {
+  margin-right: 20px;
 }
 
 @media screen and (max-width: 1090px) {
@@ -831,7 +859,7 @@ footer {
     align-items: flex-start;
   }
   .top-footer .footer-heading {
-    margin-bottom: 10px;
+    margin-bottom: 20px;
   }
   .top-footer .footer-left .footer-texts {
     width: 100%;
@@ -839,6 +867,12 @@ footer {
   .top-footer .footer-right {
     margin-top: 30px;
     width: 100%;
+  }
+  .top-footer .footer-right .footer-item:not(:last-child) {
+    margin-right: 10px;
+  }
+  .top-footer .footer-right .footer-item .footer-lists .footer-sub:not(:last-child) {
+    margin-bottom: 8px;
   }
 }
 @media screen and (max-width: 500px) {
@@ -1110,6 +1144,37 @@ footer {
     width: 100%;
     margin-left: 0px;
     margin-top: 10px;
+  }
+
+  footer {
+    padding: 50px 30px;
+  }
+
+  .top-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .top-footer .footer-heading {
+    margin-bottom: 10px;
+  }
+  .top-footer .footer-left .footer-texts {
+    width: 100%;
+  }
+  .top-footer .footer-right {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: auto;
+    margin-top: 30px;
+    width: 100%;
+  }
+  .top-footer .footer-right .footer-discover, .top-footer .footer-right .footer-contact {
+    margin-top: 25px;
+  }
+  .top-footer .footer-right .footer-item:not(:last-child) {
+    margin-right: 0px;
   }
 }
 

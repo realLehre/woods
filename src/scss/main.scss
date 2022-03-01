@@ -611,8 +611,39 @@ footer {
             font-size: 13px;
             font-weight: 100;
             color: white;
+            @include c.transition;
+
+            &:hover {
+              color: c.$dark-milk;
+            }
           }
         }
+      }
+    }
+  }
+}
+
+.bottom-footer {
+  @include c.flex(row);
+  width: 100%;
+  margin-top: 120px;
+
+  & .copy {
+    font-size: 13px;
+    & span {
+      margin-left: 2px;
+    }
+  }
+
+  & .media {
+    & i {
+      cursor: pointer;
+
+      &:hover {
+        color: c.$dark-milk;
+      }
+      &:not(:last-child) {
+        margin-right: 20px;
       }
     }
   }
