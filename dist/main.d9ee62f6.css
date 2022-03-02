@@ -619,6 +619,7 @@ body {
   flex-direction: row;
 }
 .slider-btns .slider-btn {
+  color: #623b1c;
   border: 1px solid #623b1c;
   border-radius: 50%;
   height: 35px;
@@ -629,6 +630,10 @@ body {
 }
 .slider-btns .slider-btn:not(:first-child) {
   margin-left: 20px;
+}
+.slider-btns .slider-btn.active {
+  background: #623b1c;
+  color: white;
 }
 .slider-btns .slider-btn i {
   font-size: 20px;

@@ -611,6 +611,7 @@ body {
   @include c.flex(row);
 
   & .slider-btn {
+    color: c.$maincolor;
     border: 1px solid c.$maincolor;
     border-radius: 50%;
     height: 35px;
@@ -620,6 +621,11 @@ body {
     cursor: pointer;
     &:not(:first-child) {
       margin-left: 20px;
+    }
+
+    &.active {
+      background: c.$maincolor;
+      color: white;
     }
 
     & i {
