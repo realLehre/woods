@@ -551,9 +551,61 @@ body {
   margin: 0 auto;
 }
 .testimonials .testimonial {
-  width: 413px;
+  width: 300px;
+  height: 320px;
   border: 1px solid white;
+  padding: 30px 20px;
   border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.testimonials .testimonial.active {
+  background: white;
+  color: #623b1c;
+}
+.testimonials .testimonial .testimonial-img {
+  position: relative;
+}
+.testimonials .testimonial .testimonial-img::before {
+  position: absolute;
+  content: "";
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.6);
+  filter: blur(10px);
+  top: 23px;
+  left: 6px;
+  z-index: 1;
+}
+.testimonials .testimonial .testimonial-img img {
+  width: 40px;
+  position: relative;
+  z-index: 2;
+}
+.testimonials .testimonial .testimonial-content {
+  font-size: 18px;
+  margin: 20px 0 35px;
+}
+.testimonials .testimonial .testimonial-person {
+  display: flex;
+}
+.testimonials .testimonial .testimonial-person .person-img {
+  margin-right: 10px;
+  width: 40px;
+}
+.testimonials .testimonial .testimonial-person .person-img img {
+  width: 100%;
+}
+.testimonials .testimonial .testimonial-person .person-details h5 {
+  font-size: 18px;
+}
+.testimonials .testimonial .testimonial-person .person-details p {
+  font-size: 12px;
+  line-height: 1;
 }
 
 #newsletter {
