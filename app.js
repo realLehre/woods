@@ -23,5 +23,30 @@ window.addEventListener('scroll', ()=>{
     } else {
         header.classList.remove('bottom-border')
     }
-    console.log(window.scrollY);
+  
 })
+
+const slides = document.querySelectorAll('.testimonial');
+slides[1].classList.add('active');
+let index = 2;
+
+function plusSlides(n){
+    showSlide(index += n);
+    console.log(index)
+}
+
+function showSlide(n){
+    if(n > slides.length){
+        index = 1;
+    }
+
+    if(n < 1){
+        index = slides.length;
+    }
+
+    for(p = 0; p < slides.length; p++){
+        slides[p].classList.remove('active');
+    }
+
+    slides[index -1].classList.add('active');
+}

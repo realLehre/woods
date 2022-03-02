@@ -548,10 +548,12 @@ body {
     border-radius: 5px;
     @include c.flex(column);
     align-items: flex-start;
+    @include c.transition;
 
     &.active {
       background: white;
       color: c.$maincolor;
+      transform: scale(1.2);
     }
 
     & .testimonial-img {
@@ -607,7 +609,7 @@ body {
 }
 .slider-btns {
   align-self: center;
-  margin-top: 30px;
+  margin-top: 50px;
   @include c.flex(row);
 
   & .slider-btn {
@@ -623,7 +625,7 @@ body {
       margin-left: 20px;
     }
 
-    &.active {
+    &:hover {
       background: c.$maincolor;
       color: white;
     }

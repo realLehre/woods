@@ -563,10 +563,12 @@ body {
   align-items: center;
   flex-direction: column;
   align-items: flex-start;
+  transition: all 700ms ease-in-out;
 }
 .testimonials .testimonial.active {
   background: white;
   color: #623b1c;
+  transform: scale(1.2);
 }
 .testimonials .testimonial .testimonial-img {
   position: relative;
@@ -612,7 +614,7 @@ body {
 
 .slider-btns {
   align-self: center;
-  margin-top: 30px;
+  margin-top: 50px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -631,7 +633,7 @@ body {
 .slider-btns .slider-btn:not(:first-child) {
   margin-left: 20px;
 }
-.slider-btns .slider-btn.active {
+.slider-btns .slider-btn:hover {
   background: #623b1c;
   color: white;
 }
