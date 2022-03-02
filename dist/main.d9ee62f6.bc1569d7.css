@@ -535,6 +535,8 @@ body {
 
 .testimonial-container {
   color: white;
+  display: flex;
+  flex-direction: column;
 }
 .testimonial-container h4 {
   font-family: "Plus Jakarta Display", sans-serif;
@@ -547,7 +549,7 @@ body {
   justify-content: space-between;
   align-items: center;
   flex-direction: row;
-  width: 95%;
+  width: 90%;
   margin: 0 auto;
 }
 .testimonials .testimonial {
@@ -606,6 +608,31 @@ body {
 .testimonials .testimonial .testimonial-person .person-details p {
   font-size: 12px;
   line-height: 1;
+}
+
+.slider-btns {
+  align-self: center;
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+.slider-btns .slider-btn {
+  border: 1px solid #623b1c;
+  border-radius: 50%;
+  height: 35px;
+  width: 35px;
+  line-height: 35px;
+  text-align: center;
+  cursor: pointer;
+}
+.slider-btns .slider-btn:not(:first-child) {
+  margin-left: 20px;
+}
+.slider-btns .slider-btn i {
+  font-size: 20px;
+  font-weight: bolder;
 }
 
 #newsletter {

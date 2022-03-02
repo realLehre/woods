@@ -526,6 +526,8 @@ body {
 }
 .testimonial-container {
   color: white;
+  display: flex;
+  flex-direction: column;
 
   & h4 {
     @include c.secFont;
@@ -535,7 +537,7 @@ body {
 }
 .testimonials {
   @include c.flex(row);
-  width: 95%;
+  width: 90%;
   margin: 0 auto;
 
   & .testimonial {
@@ -600,6 +602,29 @@ body {
           line-height: 1;
         }
       }
+    }
+  }
+}
+.slider-btns {
+  align-self: center;
+  margin-top: 30px;
+  @include c.flex(row);
+
+  & .slider-btn {
+    border: 1px solid c.$maincolor;
+    border-radius: 50%;
+    height: 35px;
+    width: 35px;
+    line-height: 35px;
+    text-align: center;
+    cursor: pointer;
+    &:not(:first-child) {
+      margin-left: 20px;
+    }
+
+    & i {
+      font-size: 20px;
+      font-weight: bolder;
     }
   }
 }
