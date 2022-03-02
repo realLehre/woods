@@ -532,7 +532,7 @@ body {
   & h4 {
     @include c.secFont;
     font-size: map-get(c.$font-sizes, section-heading-texts);
-    margin-bottom: 50px;
+    margin-bottom: 70px;
   }
 }
 .testimonials {
@@ -541,6 +541,7 @@ body {
   margin: 0 auto;
 
   & .testimonial {
+    position: relative;
     width: 300px;
     height: 320px;
     border: 1px solid white;
@@ -549,11 +550,13 @@ body {
     @include c.flex(column);
     align-items: flex-start;
     @include c.transition;
+    z-index: 3;
 
     &.active {
       background: white;
       color: c.$maincolor;
       transform: scale(1.2);
+      z-index: 4;
     }
 
     & .testimonial-img {
