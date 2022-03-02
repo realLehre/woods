@@ -519,9 +519,30 @@ body {
 }
 
 #testimonials {
-  width: 100%;
-  height: 400px;
+  max-width: 1400px;
+  padding: 40px 60px;
+  position: relative;
   background: c.$dark-milk;
+}
+.testimonial-container {
+  color: white;
+
+  & h4 {
+    @include c.secFont;
+    font-size: map-get(c.$font-sizes, section-heading-texts);
+    margin-bottom: 50px;
+  }
+}
+.testimonials {
+  @include c.flex(row);
+  width: 95%;
+  margin: 0 auto;
+
+  & .testimonial {
+    width: 413px;
+    border: 1px solid white;
+    border-radius: 5px;
+  }
 }
 
 #newsletter {
