@@ -143,7 +143,8 @@ window.addEventListener('scroll', function () {
 });
 var slideContainer = document.querySelectorAll('.testimonials');
 var slides = document.querySelectorAll('.testimonial');
-slides[1].classList.add('active');
+var slidesMobile = document.querySelectorAll('#tm');
+slides[0].classList.add('active');
 var index = 2;
 
 function plusSlides(n) {
@@ -216,7 +217,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "55362" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "52366" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

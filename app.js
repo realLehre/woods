@@ -28,7 +28,8 @@ window.addEventListener('scroll', ()=>{
 
 const slideContainer = document.querySelectorAll('.testimonials');
 const slides = document.querySelectorAll('.testimonial');
-slides[1].classList.add('active');
+const slidesMobile = document.querySelectorAll('#tm');
+slides[0].classList.add('active');
 
 let index = 2;
 
