@@ -141,10 +141,8 @@ window.addEventListener('scroll', function () {
     header.classList.remove('bottom-border');
   }
 });
-var slideContainer = document.querySelectorAll('.testimonials');
 var slides = document.querySelectorAll('.testimonial');
-var slidesMobile = document.querySelectorAll('#tm');
-slides[0].classList.add('active');
+slides[1].classList.add('active');
 var index = 2;
 
 function plusSlides(n) {
@@ -163,16 +161,8 @@ slideBtn.forEach(function (btn) {
     }
   });
 });
-console.log(window.innerWidth); // const nextBtn = document.querySelector('.next');
-// nextBtn.addEventListener('click', () => {
-//     plusSlides(1);
-//     console.log(2)
-// })
-// const prevBtn = document.querySelector('.prev');
-// nextBtn.addEventListener('click', () => {
-//     plusSlides(-1);
-//     console.log(1);
-// })
+var pointers = document.querySelectorAll('.pointer');
+pointers[1].classList.add('active');
 
 function showSlide(n) {
   if (n > slides.length) {
@@ -187,7 +177,12 @@ function showSlide(n) {
     slides[p].classList.remove('active');
   }
 
+  for (p = 0; p < pointers.length; p++) {
+    pointers[p].classList.remove('active');
+  }
+
   slides[index - 1].classList.add('active');
+  pointers[index - 1].classList.add('active');
 }
 },{}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
@@ -217,7 +212,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "52366" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "55362" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

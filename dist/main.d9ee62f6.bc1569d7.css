@@ -615,6 +615,10 @@ body {
   line-height: 1;
 }
 
+.slider-pointers {
+  display: none;
+}
+
 .slider-btns {
   align-self: center;
   margin-top: 50px;
@@ -1351,7 +1355,7 @@ footer {
 
   .testimonials {
     position: relative;
-    height: 360px;
+    height: 250px;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -1365,6 +1369,7 @@ footer {
     width: 60%;
     margin: 0 auto;
     transform: scale(0);
+    transition: all 1000ms ease-in-out;
   }
   .testimonials .testimonial.active {
     transform: scale(1);
@@ -1372,24 +1377,14 @@ footer {
     z-index: 4;
   }
   .testimonials .testimonial .testimonial-img::before {
-    position: absolute;
-    content: "";
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    background: rgba(0, 0, 0, 0.7);
-    filter: blur(10px);
-    top: 16px;
-    left: 5px;
-    z-index: 1;
+    width: 30px;
+    height: 30px;
   }
   .testimonials .testimonial .testimonial-img img {
-    width: 30px;
+    width: 40px;
   }
   .testimonials .testimonial .testimonial-content {
-    text-align: center;
-    font-size: 15px;
-    margin: 20px 0 35px;
+    font-size: 18px;
   }
   .testimonials .testimonial .testimonial-person {
     display: flex;
@@ -1397,22 +1392,42 @@ footer {
   }
   .testimonials .testimonial .testimonial-person .person-img {
     margin-right: 10px;
-    width: 35px;
+    width: 50px;
   }
   .testimonials .testimonial .testimonial-person .person-img img {
     width: 100%;
   }
   .testimonials .testimonial .testimonial-person .person-details h5 {
-    font-size: 12px;
+    font-size: 18px;
   }
   .testimonials .testimonial .testimonial-person .person-details p {
-    font-size: 8px;
-    line-height: 1;
+    font-size: 12px;
+  }
+
+  .slider-pointers {
+    width: 60px;
+    height: 50px;
+    margin: 0 auto;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+  }
+  .slider-pointers .pointer {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: 1px solid #623b1c;
+    transition: all 1000ms ease-in-out;
+  }
+  .slider-pointers .pointer.active {
+    background: #623b1c;
   }
 
   .slider-btns {
     align-self: center;
-    margin-top: 50px;
+    margin-top: 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
