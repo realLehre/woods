@@ -152,11 +152,11 @@ function plusSlides(n) {
 var slideBtn = document.querySelectorAll('.slider-btn');
 slideBtn.forEach(function (btn) {
   btn.addEventListener('click', function (e) {
-    if (screen.width >= 501 && e.target.classList.contains('prev')) {
+    if (e.target.classList.contains('prev')) {
       plusSlides(-1);
     }
 
-    if (screen.width >= 501 && e.target.classList.contains('next')) {
+    if (e.target.classList.contains('next')) {
       plusSlides(1);
     }
   });

@@ -1345,9 +1345,6 @@ footer {
     padding: 40px 0px;
   }
 
-  .testimonial-container {
-    overflow: hidden;
-  }
   .testimonial-container h4 {
     font-size: 40px;
     text-align: center;
@@ -1386,16 +1383,9 @@ footer {
   .testimonials .testimonial .testimonial-content {
     font-size: 18px;
   }
-  .testimonials .testimonial .testimonial-person {
-    display: flex;
-    align-items: center;
-  }
   .testimonials .testimonial .testimonial-person .person-img {
     margin-right: 10px;
     width: 50px;
-  }
-  .testimonials .testimonial .testimonial-person .person-img img {
-    width: 100%;
   }
   .testimonials .testimonial .testimonial-person .person-details h5 {
     font-size: 18px;
@@ -1426,33 +1416,7 @@ footer {
   }
 
   .slider-btns {
-    align-self: center;
     margin-top: 10px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: row;
-  }
-  .slider-btns .slider-btn {
-    color: #623b1c;
-    border: 1px solid #623b1c;
-    border-radius: 50%;
-    height: 35px;
-    width: 35px;
-    line-height: 35px;
-    text-align: center;
-    cursor: pointer;
-  }
-  .slider-btns .slider-btn:not(:first-child) {
-    margin-left: 20px;
-  }
-  .slider-btns .slider-btn:hover {
-    background: #623b1c;
-    color: white;
-  }
-  .slider-btns .slider-btn i {
-    font-size: 20px;
-    font-weight: bolder;
   }
 
   #newsletter {
