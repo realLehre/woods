@@ -141,14 +141,37 @@ window.addEventListener('scroll', function () {
     header.classList.remove('bottom-border');
   }
 });
+var slideContainer = document.querySelectorAll('.testimonials');
 var slides = document.querySelectorAll('.testimonial');
 slides[1].classList.add('active');
 var index = 2;
 
 function plusSlides(n) {
   showSlide(index += n);
-  console.log(index);
 }
+
+var slideBtn = document.querySelectorAll('.slider-btn');
+slideBtn.forEach(function (btn) {
+  btn.addEventListener('click', function (e) {
+    if (screen.width >= 501 && e.target.classList.contains('prev')) {
+      plusSlides(-1);
+    }
+
+    if (screen.width >= 501 && e.target.classList.contains('next')) {
+      plusSlides(1);
+    }
+  });
+});
+console.log(window.innerWidth); // const nextBtn = document.querySelector('.next');
+// nextBtn.addEventListener('click', () => {
+//     plusSlides(1);
+//     console.log(2)
+// })
+// const prevBtn = document.querySelector('.prev');
+// nextBtn.addEventListener('click', () => {
+//     plusSlides(-1);
+//     console.log(1);
+// })
 
 function showSlide(n) {
   if (n > slides.length) {

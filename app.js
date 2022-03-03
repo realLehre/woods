@@ -26,14 +26,43 @@ window.addEventListener('scroll', ()=>{
   
 })
 
+const slideContainer = document.querySelectorAll('.testimonials');
 const slides = document.querySelectorAll('.testimonial');
 slides[1].classList.add('active');
+
 let index = 2;
 
 function plusSlides(n){
     showSlide(index += n);
-    console.log(index)
 }
+
+const slideBtn = document.querySelectorAll('.slider-btn');
+slideBtn.forEach(btn => {
+    btn.addEventListener('click', (e) => {
+        if(screen.width >= 501 && e.target.classList.contains('prev')){
+            plusSlides(-1);
+        } 
+
+        if(screen.width >= 501 && e.target.classList.contains('next')){
+            plusSlides(1);
+        }
+       
+    })
+   
+})
+
+console.log(window.innerWidth)
+
+// const nextBtn = document.querySelector('.next');
+// nextBtn.addEventListener('click', () => {
+//     plusSlides(1);
+//     console.log(2)
+// })
+// const prevBtn = document.querySelector('.prev');
+// nextBtn.addEventListener('click', () => {
+//     plusSlides(-1);
+//     console.log(1);
+// })
 
 function showSlide(n){
     if(n > slides.length){

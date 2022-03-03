@@ -1337,6 +1337,96 @@ footer {
     margin-left: 0px;
   }
 
+  #testimonials {
+    padding: 40px 30px;
+  }
+
+  .testimonial-container {
+    overflow: hidden;
+  }
+  .testimonial-container h4 {
+    font-size: 40px;
+    text-align: center;
+  }
+
+  .testimonials {
+    width: 900px;
+    transform: translateX(-535px);
+    transition: all 700ms ease-in-out;
+  }
+  .testimonials .testimonial {
+    padding: 30px 10px;
+    width: 300px;
+  }
+  .testimonials .testimonial .testimonial-img::before {
+    position: absolute;
+    content: "";
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.7);
+    filter: blur(10px);
+    top: 16px;
+    left: 5px;
+    z-index: 1;
+  }
+  .testimonials .testimonial .testimonial-img img {
+    width: 30px;
+  }
+  .testimonials .testimonial .testimonial-content {
+    text-align: center;
+    font-size: 15px;
+    margin: 20px 0 35px;
+  }
+  .testimonials .testimonial .testimonial-person {
+    display: flex;
+    align-items: center;
+  }
+  .testimonials .testimonial .testimonial-person .person-img {
+    margin-right: 10px;
+    width: 35px;
+  }
+  .testimonials .testimonial .testimonial-person .person-img img {
+    width: 100%;
+  }
+  .testimonials .testimonial .testimonial-person .person-details h5 {
+    font-size: 12px;
+  }
+  .testimonials .testimonial .testimonial-person .person-details p {
+    font-size: 8px;
+    line-height: 1;
+  }
+
+  .slider-btns {
+    align-self: center;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+  }
+  .slider-btns .slider-btn {
+    color: #623b1c;
+    border: 1px solid #623b1c;
+    border-radius: 50%;
+    height: 35px;
+    width: 35px;
+    line-height: 35px;
+    text-align: center;
+    cursor: pointer;
+  }
+  .slider-btns .slider-btn:not(:first-child) {
+    margin-left: 20px;
+  }
+  .slider-btns .slider-btn:hover {
+    background: #623b1c;
+    color: white;
+  }
+  .slider-btns .slider-btn i {
+    font-size: 20px;
+    font-weight: bolder;
+  }
+
   #newsletter {
     padding: 0 30px;
   }

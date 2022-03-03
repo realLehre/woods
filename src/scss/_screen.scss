@@ -621,6 +621,105 @@
       }
     }
 
+    #testimonials {
+      padding: 40px 30px;
+    }
+    .testimonial-container {
+      overflow: hidden;
+      & h4 {
+        font-size: map-get(c.$font-sizes, section-heading-texts-mobile);
+        text-align: center;
+      }
+    }
+    .testimonials {
+      // width: 100%;
+      width: 900px;
+      transform: translateX(-535px);
+      @include c.transition;
+
+      & .testimonial {
+        padding: 30px 10px;
+        width: 300px;
+
+        & .testimonial-img {
+          &::before {
+            position: absolute;
+            content: '';
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background: rgba(0, 0, 0, 0.7);
+            filter: blur(10px);
+            top: 16px;
+            left: 5px;
+            z-index: 1;
+          }
+
+          & img {
+            width: 30px;
+          }
+        }
+
+        & .testimonial-content {
+          text-align: center;
+          font-size: 15px;
+          margin: 20px 0 35px;
+        }
+
+        & .testimonial-person {
+          display: flex;
+          align-items: center;
+
+          & .person-img {
+            margin-right: 10px;
+            width: 35px;
+            & img {
+              width: 100%;
+            }
+          }
+
+          & .person-details {
+            & h5 {
+              font-size: 12px;
+            }
+            & p {
+              font-size: 8px;
+              line-height: 1;
+            }
+          }
+        }
+      }
+    }
+    .slider-btns {
+      align-self: center;
+      margin-top: 50px;
+      @include c.flex(row);
+
+      & .slider-btn {
+        color: c.$maincolor;
+        border: 1px solid c.$maincolor;
+        border-radius: 50%;
+        height: 35px;
+        width: 35px;
+        line-height: 35px;
+        text-align: center;
+        cursor: pointer;
+        &:not(:first-child) {
+          margin-left: 20px;
+        }
+
+        &:hover {
+          background: c.$maincolor;
+          color: white;
+        }
+
+        & i {
+          font-size: 20px;
+          font-weight: bolder;
+        }
+      }
+    }
+
     #newsletter {
       padding: 0 30px;
     }
