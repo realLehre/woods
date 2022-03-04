@@ -175,7 +175,7 @@ body {
           height: 3px;
           border-radius: 3px;
           background: c.$dark-color;
-          transition: all 1550ms cubic-bezier(1, 0.1, 0.2, 1);
+          transition: all 1200ms cubic-bezier(1, 0.1, 0.2, 1);
 
           &:nth-child(odd) {
             width: 60%;

@@ -386,10 +386,10 @@
           height: 100%;
           @include c.flex(column);
           transform: translateY(-200%);
-          @include c.transition;
+          transition: all 750ms ease-in-out;
           align-items: center;
           justify-content: center;
-          transition-delay: 0.5s;
+          // transition-delay: 0.5s;
           overflow: hidden;
           // z-index: 50;
 
@@ -402,7 +402,7 @@
             font-size: 30px;
             transform: translateY(-1000%);
             opacity: 0;
-            @include c.transition;
+            transition: all 1200ms cubic-bezier(0.2, 0.5, 0.9, 1);
 
             &.slide {
               transform: translateY(0);
