@@ -38,19 +38,22 @@ window.addEventListener('scroll', ()=>{
 
 
 const slides = document.querySelectorAll('.testimonial');
-slides.forEach(slide => {
-    slide.addEventListener('click', () => {
-        for(p = 0; p < slides.length; p++){
-            slides[p].classList.remove('active');
-        }
-        slide.classList.add('active');
-    })
-    
-})
 
 slides[1].classList.add('active');
 
 let index = 2;
+
+slides.forEach(slide => {
+    slide.addEventListener('click', () => {
+        for(p = 0; p < slides.length; p++){
+            slides[p].classList.remove('active');
+            index = p + 1;
+        }
+        slide.classList.add('active');
+
+    })
+    
+})
 
 function plusSlides(n){
     showSlide(index += n);
