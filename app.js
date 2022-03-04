@@ -17,6 +17,16 @@ navBtn.addEventListener('click', () =>{
     })
 })
 
+navItems.forEach(item => {
+    item.addEventListener('click', () => {
+        for(p = 0; p < navItems.length; p++){
+            navItems[p].classList.remove('show');
+        }
+        item.classList.add('show');
+    })
+})
+navItems[0].classList.add('show');
+
 window.addEventListener('scroll', ()=>{
     if(window.scrollY > 35 ){
         header.classList.add('bottom-border');
