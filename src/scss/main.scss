@@ -37,6 +37,13 @@ body {
   text-align: center;
   cursor: pointer;
   z-index: 5;
+  padding-left: 2px;
+
+  & i {
+    transform: rotate(90deg);
+    font-size: 30px;
+    font-weight: bold;
+  }
 }
 
 .header {
