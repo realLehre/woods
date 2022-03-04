@@ -27,6 +27,15 @@ navItems.forEach(item => {
 })
 navItems[0].classList.add('show');
 
+window.addEventListener('scroll', ()=>{
+    if(window.scrollY > 35 ){
+        header.classList.add('bottom-border');
+    } else {
+        header.classList.remove('bottom-border')
+    }
+  
+})
+
 
 const slides = document.querySelectorAll('.testimonial');
 slides.forEach(slide => {
