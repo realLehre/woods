@@ -577,6 +577,7 @@ body {
   flex-direction: column;
   align-items: flex-start;
   transition: all 700ms ease-in-out;
+  transition: all 2200ms cubic-bezier(0.2, 0.5, 0.2, 1);
   z-index: 3;
 }
 .testimonials .testimonial.active {
@@ -1372,7 +1373,7 @@ footer {
     width: 60%;
     margin: 0 auto;
     transform: scale(0);
-    transition: all 1000ms ease-in-out;
+    transition: all 2200ms cubic-bezier(0.2, 0.5, 0.2, 1);
   }
   .testimonials .testimonial.active {
     transform: scale(1);
