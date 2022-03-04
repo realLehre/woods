@@ -144,13 +144,6 @@ navItems.forEach(function (item) {
   });
 });
 navItems[0].classList.add('show');
-window.addEventListener('scroll', function () {
-  if (window.scrollY > 35) {
-    header.classList.add('bottom-border');
-  } else {
-    header.classList.remove('bottom-border');
-  }
-});
 var slides = document.querySelectorAll('.testimonial');
 slides.forEach(function (slide) {
   slide.addEventListener('click', function () {
@@ -243,7 +236,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "52366" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "63879" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
