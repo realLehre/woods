@@ -57,8 +57,7 @@ slideBtn.forEach(btn => {
             plusSlides(1);
         }
        
-    })
-   
+    }) 
 })
 
 const pointers = document.querySelectorAll('.pointer');
