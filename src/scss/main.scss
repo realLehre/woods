@@ -30,7 +30,7 @@ body {
   color: c.$sec-color;
   border: 1px solid c.$maincolor;
   background: c.$maincolor;
-  opacity: 0.7;
+  opacity: 0.8;
   border-radius: 50%;
   height: 35px;
   width: 35px;
@@ -40,11 +40,26 @@ body {
   z-index: 5;
   padding-left: 2px;
   position: fixed;
+  animation: bulge infinite 2000ms;
 
   & i {
     transform: rotate(90deg);
     font-size: 30px;
     font-weight: bold;
+  }
+}
+
+@keyframes bulge {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.2);
+  }
+
+  100% {
+    transform: scale(1);
   }
 }
 
