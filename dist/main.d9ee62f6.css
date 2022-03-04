@@ -137,7 +137,7 @@ body {
   position: relative;
   font-size: 18px;
 }
-.header .header-items #nav-list .nav-item:first-child:after {
+.header .header-items #nav-list .nav-item.show::after {
   position: absolute;
   content: "";
   bottom: -2px;

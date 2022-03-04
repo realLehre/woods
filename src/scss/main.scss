@@ -103,7 +103,7 @@ body {
         position: relative;
         font-size: map-get(c.$font-sizes, nav-footer-texts);
 
-        &:first-child:after {
+        &.show::after {
           position: absolute;
           content: '';
           bottom: -2px;
