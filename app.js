@@ -1,21 +1,27 @@
 const header = document.querySelector('.header'),
       navBtn = document.querySelector('.nav-toggler'),
       nav = document.querySelector('#nav-list'),
-      navItems = document.querySelectorAll('.nav-item'),
-      blocks = document.querySelectorAll('.block');
+      navItems = document.querySelectorAll('.nav-item');
+     
 
-navBtn.addEventListener('click', () =>{
+navBtn.addEventListener('click', (e) =>{
     navBtn.classList.toggle('open');
     nav.classList.toggle('open');
     header.classList.toggle('open');
   
-    blocks.forEach(block =>{
-        block.classList.toggle('drop');
-    })
+
     navItems.forEach(navItem =>{
         navItem.classList.toggle('slide');
     })
+
+    if(e.target.classList.contains('nav-item')){
+        //    nav.classList.toggle('open');
+        header.classList.remove('open');
+    }
+    console.log(e.target.classList);
 })
+
+
 
 navItems.forEach(item => {
     item.addEventListener('click', () => {

@@ -121,18 +121,21 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 var header = document.querySelector('.header'),
     navBtn = document.querySelector('.nav-toggler'),
     nav = document.querySelector('#nav-list'),
-    navItems = document.querySelectorAll('.nav-item'),
-    blocks = document.querySelectorAll('.block');
-navBtn.addEventListener('click', function () {
+    navItems = document.querySelectorAll('.nav-item');
+navBtn.addEventListener('click', function (e) {
   navBtn.classList.toggle('open');
   nav.classList.toggle('open');
   header.classList.toggle('open');
-  blocks.forEach(function (block) {
-    block.classList.toggle('drop');
-  });
   navItems.forEach(function (navItem) {
     navItem.classList.toggle('slide');
   });
+
+  if (e.target.classList.contains('nav-item')) {
+    //    nav.classList.toggle('open');
+    header.classList.remove('open');
+  }
+
+  console.log(e.target.classList);
 });
 navItems.forEach(function (item) {
   item.addEventListener('click', function () {

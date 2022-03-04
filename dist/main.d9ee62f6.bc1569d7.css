@@ -1147,7 +1147,7 @@ footer {
     justify-content: space-between;
     align-items: center;
     flex-direction: column;
-    transform: translateX(-200%);
+    transform: translateY(-200%);
     transition: all 700ms ease-in-out;
     align-items: center;
     justify-content: center;
@@ -1155,7 +1155,7 @@ footer {
     overflow: hidden;
   }
   .header .header-items #nav-list.open {
-    transform: translateX(0);
+    transform: translateY(0);
     height: 100%;
   }
   .header .header-items #nav-list .nav-item {
