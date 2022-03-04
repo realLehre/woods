@@ -118,11 +118,11 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 
   return newRequire;
 })({"app.js":[function(require,module,exports) {
-var header = document.querySelector('.header');
-var navBtn = document.querySelector('.nav-toggler');
-var nav = document.querySelector('#nav-list');
-var navItems = document.querySelectorAll('.nav-item');
-var blocks = document.querySelectorAll('.block');
+var header = document.querySelector('.header'),
+    navBtn = document.querySelector('.nav-toggler'),
+    nav = document.querySelector('#nav-list'),
+    navItems = document.querySelectorAll('.nav-item'),
+    blocks = document.querySelectorAll('.block');
 navBtn.addEventListener('click', function () {
   navBtn.classList.toggle('open');
   nav.classList.toggle('open');
@@ -193,6 +193,18 @@ function showSlide(n) {
   slides[index - 1].classList.add('active');
   pointers[index - 1].classList.add('active');
 }
+
+var topBtn = document.querySelector('.to-top');
+window.addEventListener('scroll', function () {
+  if (window.scrollY >= 1000) {
+    topBtn.classList.add('show');
+  } else {
+    topBtn.classList.remove('show');
+  }
+});
+topBtn.addEventListener('click', function () {
+  document.documentElement.scrollTop = 0;
+});
 },{}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
@@ -221,7 +233,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "52366" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "63879" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

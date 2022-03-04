@@ -64,21 +64,26 @@ body {
   color: #f6eddd;
   border: 1px solid #623b1c;
   background: #623b1c;
-  opacity: 0.8;
   border-radius: 50%;
-  height: 35px;
-  width: 35px;
-  line-height: 35px;
+  height: 30px;
+  line-height: 30px;
   text-align: center;
   cursor: pointer;
   z-index: 5;
   padding-left: 2px;
   position: fixed;
   animation: bulge infinite 2000ms;
+  opacity: 0;
+  width: 0;
+  transition: all 700ms ease-in-out;
+}
+.to-top.show {
+  opacity: 0.8;
+  width: 30px;
 }
 .to-top i {
   transform: rotate(90deg);
-  font-size: 30px;
+  font-size: 25px;
   font-weight: bold;
 }
 

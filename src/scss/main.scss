@@ -30,21 +30,26 @@ body {
   color: c.$sec-color;
   border: 1px solid c.$maincolor;
   background: c.$maincolor;
-  opacity: 0.8;
   border-radius: 50%;
-  height: 35px;
-  width: 35px;
-  line-height: 35px;
+  height: 30px;
+  line-height: 30px;
   text-align: center;
   cursor: pointer;
   z-index: 5;
   padding-left: 2px;
   position: fixed;
   animation: bulge infinite 2000ms;
+  opacity: 0;
+  width: 0;
+  @include c.transition;
+  &.show {
+    opacity: 0.8;
+    width: 30px;
+  }
 
   & i {
     transform: rotate(90deg);
-    font-size: 30px;
+    font-size: 25px;
     font-weight: bold;
   }
 }

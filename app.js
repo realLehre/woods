@@ -1,8 +1,8 @@
-const header = document.querySelector('.header');
-const navBtn = document.querySelector('.nav-toggler');
-const nav = document.querySelector('#nav-list');
-const navItems = document.querySelectorAll('.nav-item');
-const blocks = document.querySelectorAll('.block');
+const header = document.querySelector('.header'),
+      navBtn = document.querySelector('.nav-toggler'),
+      nav = document.querySelector('#nav-list'),
+      navItems = document.querySelectorAll('.nav-item'),
+      blocks = document.querySelectorAll('.block');
 
 navBtn.addEventListener('click', () =>{
     navBtn.classList.toggle('open');
@@ -83,3 +83,19 @@ function showSlide(n){
     slides[index -1].classList.add('active');
     pointers[index -1].classList.add('active');
 }
+
+const topBtn = document.querySelector('.to-top');
+window.addEventListener('scroll', () => {
+    
+    if(window.scrollY >=1000 ){
+ 
+        topBtn.classList.add('show')
+    } else {
+        
+        topBtn.classList.remove('show');
+    }   
+})
+
+topBtn.addEventListener('click', () =>{
+    document.documentElement.scrollTop = 0;
+})
