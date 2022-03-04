@@ -62,7 +62,6 @@ body {
   bottom: 20px;
   right: 20px;
   color: #f6eddd;
-  border: 1px solid #623b1c;
   background: #623b1c;
   border-radius: 50%;
   height: 30px;
@@ -70,7 +69,6 @@ body {
   text-align: center;
   cursor: pointer;
   z-index: 5;
-  padding-left: 2px;
   position: fixed;
   animation: bulge infinite 2000ms;
   opacity: 0;
@@ -82,7 +80,6 @@ body {
   width: 30px;
 }
 .to-top i {
-  transform: rotate(90deg);
   font-size: 25px;
   font-weight: bold;
 }
