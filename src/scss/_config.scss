@@ -38,7 +38,7 @@ $font-weight: (
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  // outline: 1px solid red;
+  scroll-behavior: smooth;
 }
 
 a {
@@ -48,6 +48,22 @@ a {
 
 li {
   list-style: none;
+}
+
+@mixin animation($name) {
+  @keyframes #{$name} {
+    0% {
+      transform: scale(1);
+    }
+
+    50% {
+      transform: scale(1.2);
+    }
+
+    100% {
+      transform: scale(1);
+    }
+  }
 }
 
 @mixin flex($direction) {

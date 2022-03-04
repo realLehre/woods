@@ -40,26 +40,12 @@ body {
   z-index: 5;
   padding-left: 2px;
   position: fixed;
-  animation: bulge infinite 2000ms;
+  animation: c.animation(bulge);
 
   & i {
     transform: rotate(90deg);
     font-size: 30px;
     font-weight: bold;
-  }
-}
-
-@keyframes bulge {
-  0% {
-    transform: scale(1);
-  }
-
-  50% {
-    transform: scale(1.2);
-  }
-
-  100% {
-    transform: scale(1);
   }
 }
 
