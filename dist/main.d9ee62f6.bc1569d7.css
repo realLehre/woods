@@ -993,11 +993,23 @@ footer {
   .products:after {
     position: absolute;
     content: "";
-    width: 50px;
+    width: 30px;
     height: 70px;
-    background: linear-gradient(to right, white, rgba(255, 255, 255, 0.5));
+    background: white;
+    filter: blur(10px);
     bottom: 0;
-    left: 0;
+    left: -5px;
+  }
+  .products:before {
+    position: absolute;
+    content: "";
+    width: 30px;
+    height: 70px;
+    background: white;
+    filter: blur(10px);
+    bottom: 0;
+    right: -5px;
+    z-index: 2;
   }
   .products .products-number {
     font-size: 55px;
@@ -1007,7 +1019,7 @@ footer {
     font-size: 20px;
   }
   .products .products-brands {
-    animation: slide 8s linear infinite;
+    animation: slide 10s linear infinite;
   }
   .products .products-brands img {
     width: 120px;
