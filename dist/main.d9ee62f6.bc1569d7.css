@@ -72,6 +72,7 @@ body {
   color: #623b1c;
   z-index: 100;
   overflow: hidden;
+  transition: all 700ms ease-in-out;
 }
 .preloader .lds-ellipsis {
   display: inline-block;
