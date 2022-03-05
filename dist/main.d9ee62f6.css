@@ -77,7 +77,6 @@ body {
 }
 .preloader.remove {
   transform: translateY(-2000%);
-  overflow: hidden;
 }
 .preloader .lds-ellipsis {
   display: inline-block;

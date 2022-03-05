@@ -44,7 +44,7 @@ body {
   &.remove {
     // height: 0;
     transform: translateY(-2000%);
-    overflow: hidden;
+    // overflow: hidden;
   }
 
   & .lds-ellipsis {
