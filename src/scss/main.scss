@@ -42,9 +42,7 @@ body {
   @include c.transition;
   transition: all 10000ms ease-out;
   &.remove {
-    // height: 0;
     transform: translateY(-2000%);
-    // overflow: hidden;
   }
 
   & .lds-ellipsis {
