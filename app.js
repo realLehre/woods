@@ -8,7 +8,6 @@ const header = document.querySelector('.header'),
       nav = document.querySelector('#nav-list'),
       navItems = document.querySelectorAll('.nav-item');
      
-
 navBtn.addEventListener('click', (e) =>{
     navBtn.classList.toggle('open');
     nav.classList.toggle('open');
@@ -34,6 +33,12 @@ navItems.forEach(item => {
             navItems[p].classList.remove('show');
         }
         item.classList.add('show');
+        navBtn.classList.remove('open');
+        nav.classList.remove('open');
+        header.classList.remove('open');
+        navItems.forEach(navItem =>{
+        navItem.classList.remove('slide');
+    })
     })
 })
 navItems[0].classList.add('show');
