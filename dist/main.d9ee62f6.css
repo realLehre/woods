@@ -1654,6 +1654,17 @@ footer {
   }
 }
 @media screen and (max-width: 420px) {
+  @keyframes slide {
+    0% {
+      transform: translateX(0%);
+    }
+    50% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(0%);
+    }
+  }
   #products-display .products-display-imgs {
     margin-top: 20px;
     grid-template-columns: repeat(2, 1fr);
@@ -1682,6 +1693,19 @@ footer {
   }
   .bottom-footer .media i:not(:last-child) {
     margin-right: 10px;
+  }
+}
+@media screen and (min-width: 200px) and (max-width: 370px) {
+  @keyframes slide {
+    0% {
+      transform: translateX(0%);
+    }
+    50% {
+      transform: translateX(-130%);
+    }
+    100% {
+      transform: translateX(0%);
+    }
   }
 }
 
