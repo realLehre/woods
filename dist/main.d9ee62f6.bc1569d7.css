@@ -71,10 +71,12 @@ body {
   font-weight: bolder;
   color: #623b1c;
   z-index: 100;
+  transform: translateY(0);
   transition: all 700ms ease-in-out;
+  transition: all 2000ms ease-out;
 }
 .preloader.remove {
-  height: 0;
+  transform: translateY(-2000%);
   overflow: hidden;
 }
 .preloader .lds-ellipsis {

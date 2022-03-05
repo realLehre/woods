@@ -38,9 +38,12 @@ body {
   font-weight: bolder;
   color: c.$maincolor;
   z-index: 100;
+  transform: translateY(0);
   @include c.transition;
+  transition: all 2000ms ease-out;
   &.remove {
-    height: 0;
+    // height: 0;
+    transform: translateY(-2000%);
     overflow: hidden;
   }
 
