@@ -73,7 +73,7 @@ body {
   z-index: 100;
   transform: translateY(0);
   transition: all 700ms ease-in-out;
-  transition: all 5000ms ease-out;
+  transition: all 10000ms ease-out;
 }
 .preloader.remove {
   transform: translateY(-2000%);
