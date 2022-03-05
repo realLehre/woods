@@ -71,8 +71,11 @@ body {
   font-weight: bolder;
   color: #623b1c;
   z-index: 100;
-  overflow: hidden;
   transition: all 700ms ease-in-out;
+}
+.preloader.remove {
+  height: 0;
+  overflow: hidden;
 }
 .preloader .lds-ellipsis {
   display: inline-block;
