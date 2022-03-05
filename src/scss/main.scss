@@ -158,7 +158,7 @@ body {
     box-shadow: -3px 3px 8px grey;
   }
   & .header-items {
-    max-width: 1400px;
+    max-width: 1300px;
     width: 90%;
     margin: 0 auto;
     color: c.$dark-color;
@@ -369,6 +369,7 @@ body {
   align-items: flex-start;
   padding: 0 60px;
   overflow: hidden;
+  margin: 0 auto;
 
   #{&}-number {
     @include c.flex(column);
@@ -387,10 +388,7 @@ body {
     margin-top: 20px;
     width: 100%;
     @include c.flex(row);
-    overflow: scroll;
-    &::-webkit-scrollbar {
-      width: 0 !important;
-    }
+    // overflow-x: scroll;
 
     // flex-wrap: wrap;
 
@@ -405,6 +403,7 @@ body {
   max-width: 1400px;
   @include c.flex(column);
   padding: 0 60px;
+  margin: 0 auto;
   margin-bottom: 60px;
   // overflow-x: hidden;
 
@@ -488,6 +487,7 @@ body {
   max-width: 1400px;
   @include c.flex(column);
   padding: 0 60px;
+  margin: 0 auto;
   margin-bottom: 60px;
 
   & .products-display-heading {
@@ -546,6 +546,7 @@ body {
 #interior {
   max-width: 1400px;
   padding: 0 60px;
+  margin: 0 auto;
   margin-bottom: 50px;
 }
 
@@ -622,15 +623,16 @@ body {
 }
 
 #testimonials {
-  max-width: 1400px;
   padding: 40px 60px;
   position: relative;
   background: c.$dark-milk;
 }
 .testimonial-container {
+  max-width: 1400px;
   color: white;
   display: flex;
   flex-direction: column;
+  margin: 0 auto;
 
   & h4 {
     @include c.secFont;
@@ -753,6 +755,7 @@ body {
   max-width: 1400px;
   padding: 0 60px;
   background: white;
+  margin: 0 auto;
   position: relative;
 
   & .arrow {
@@ -814,13 +817,15 @@ body {
 
 footer {
   background: c.$maincolor;
-  max-width: 1400px;
+
   padding: 50px 60px;
   color: white;
   @include c.secFont;
 }
 
 .top-footer {
+  max-width: 1400px;
+  margin: 0 auto;
   @include c.flex(row);
   align-items: flex-start;
 
@@ -873,6 +878,8 @@ footer {
 }
 
 .bottom-footer {
+  max-width: 1400px;
+  margin: 0 auto;
   @include c.flex(row);
   width: 100%;
   margin-top: 120px;

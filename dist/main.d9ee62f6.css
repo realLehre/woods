@@ -185,7 +185,7 @@ body {
   box-shadow: -3px 3px 8px grey;
 }
 .header .header-items {
-  max-width: 1400px;
+  max-width: 1300px;
   width: 90%;
   margin: 0 auto;
   color: #14120f;
@@ -390,6 +390,7 @@ body {
   align-items: flex-start;
   padding: 0 60px;
   overflow: hidden;
+  margin: 0 auto;
 }
 .products .products-number {
   display: flex;
@@ -412,10 +413,6 @@ body {
   justify-content: space-between;
   align-items: center;
   flex-direction: row;
-  overflow: scroll;
-}
-.products .products-brands::-webkit-scrollbar {
-  width: 0 !important;
 }
 .products .products-brands img {
   width: 155px;
@@ -429,6 +426,7 @@ body {
   align-items: center;
   flex-direction: column;
   padding: 0 60px;
+  margin: 0 auto;
   margin-bottom: 60px;
 }
 .products-desc .products-desc-container {
@@ -504,6 +502,7 @@ body {
   align-items: center;
   flex-direction: column;
   padding: 0 60px;
+  margin: 0 auto;
   margin-bottom: 60px;
 }
 #products-display .products-display-heading {
@@ -556,6 +555,7 @@ body {
 #interior {
   max-width: 1400px;
   padding: 0 60px;
+  margin: 0 auto;
   margin-bottom: 50px;
 }
 
@@ -624,16 +624,17 @@ body {
 }
 
 #testimonials {
-  max-width: 1400px;
   padding: 40px 60px;
   position: relative;
   background: #caad8c;
 }
 
 .testimonial-container {
+  max-width: 1400px;
   color: white;
   display: flex;
   flex-direction: column;
+  margin: 0 auto;
 }
 .testimonial-container h4 {
   font-family: "Plus Jakarta Display", sans-serif;
@@ -751,6 +752,7 @@ body {
   max-width: 1400px;
   padding: 0 60px;
   background: white;
+  margin: 0 auto;
   position: relative;
 }
 #newsletter .arrow {
@@ -811,13 +813,14 @@ body {
 
 footer {
   background: #623b1c;
-  max-width: 1400px;
   padding: 50px 60px;
   color: white;
   font-family: "Plus Jakarta Display", sans-serif;
 }
 
 .top-footer {
+  max-width: 1400px;
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -862,6 +865,8 @@ footer {
 }
 
 .bottom-footer {
+  max-width: 1400px;
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -886,6 +891,14 @@ footer {
 }
 
 @media screen and (max-width: 1090px) {
+  .products .products-brands img {
+    width: 120px;
+    cursor: pointer;
+  }
+  .products .products-brands img:not(:last-child) {
+    margin-right: 20px;
+  }
+
   #interior {
     padding: 0 35px;
     margin-bottom: 50px;
@@ -974,7 +987,17 @@ footer {
   }
 
   .products {
+    position: relative;
     padding: 0 35px;
+  }
+  .products:after {
+    position: absolute;
+    content: "";
+    width: 50px;
+    height: 70px;
+    background: linear-gradient(to right, white, rgba(255, 255, 255, 0.5));
+    bottom: 0;
+    left: 0;
   }
   .products .products-number {
     font-size: 55px;
@@ -983,7 +1006,28 @@ footer {
     margin-top: -10px;
     font-size: 20px;
   }
+  .products .products-brands {
+    animation: slide 8s linear infinite;
+  }
+  .products .products-brands img {
+    width: 120px;
+    cursor: pointer;
+  }
+  .products .products-brands img:not(:last-child) {
+    margin-right: 20px;
+  }
 
+  @keyframes slide {
+    0% {
+      transform: translateX(0%);
+    }
+    50% {
+      transform: translateX(-25%);
+    }
+    100% {
+      transform: translateX(0%);
+    }
+  }
   .products-desc {
     padding: 0 35px;
   }
@@ -1208,7 +1252,7 @@ footer {
     background: transparent;
     z-index: 12;
     padding: 0;
-    height: 68px;
+    height: 61px;
   }
   .header.open {
     height: 100%;
@@ -1219,7 +1263,7 @@ footer {
     max-width: 1400px;
     width: 100%;
     margin: 0 auto;
-    padding: 20px 35px;
+    padding: 15px 35px;
     color: #14120f;
   }
   .header .header-items #nav-list {
@@ -1321,7 +1365,21 @@ footer {
     width: 120px;
     cursor: pointer;
   }
+  .products .products-brands img:not(:last-child) {
+    margin-right: 20px;
+  }
 
+  @keyframes slide {
+    0% {
+      transform: translateX(0%);
+    }
+    50% {
+      transform: translateX(-65%);
+    }
+    100% {
+      transform: translateX(0%);
+    }
+  }
   .products-desc {
     padding: 0 35px;
   }

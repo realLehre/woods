@@ -2,6 +2,19 @@
 
 @mixin small-PCs {
   @media screen and (max-width: 1090px) {
+    .products {
+      #{&}-brands {
+        & img {
+          width: 120px;
+          cursor: pointer;
+
+          &:not(:last-child) {
+            margin-right: 20px;
+          }
+        }
+      }
+    }
+
     #interior {
       padding: 0 35px;
       margin-bottom: 50px;
@@ -94,7 +107,21 @@
     }
 
     .products {
+      position: relative;
       padding: 0 35px;
+      &:after {
+        position: absolute;
+        content: '';
+        width: 50px;
+        height: 70px;
+        background: linear-gradient(
+          to right,
+          rgba(255, 255, 255, 1),
+          rgba(255, 255, 255, 0.5)
+        );
+        bottom: 0;
+        left: 0;
+      }
 
       #{&}-number {
         font-size: map-get(c.$font-sizes, hero-main-text-mobile);
@@ -103,6 +130,33 @@
           margin-top: -10px;
           font-size: map-get(c.$font-sizes, main-contents-mobile);
         }
+      }
+
+      #{&}-brands {
+        animation: slide 8s linear infinite;
+
+        & img {
+          width: 120px;
+          cursor: pointer;
+
+          &:not(:last-child) {
+            margin-right: 20px;
+          }
+        }
+      }
+    }
+
+    @keyframes slide {
+      0% {
+        transform: translateX(0%);
+      }
+
+      50% {
+        transform: translateX(-25%);
+      }
+
+      100% {
+        transform: translateX(0%);
       }
     }
 
@@ -357,7 +411,8 @@
       background: transparent;
       z-index: 12;
       padding: 0;
-      height: 68px;
+      // height: 68px;
+      height: 61px;
 
       &.open {
         height: 100%;
@@ -374,7 +429,7 @@
         // padding: 20px;
         // padding-left: 30px;
         // padding-right: 30px;
-        padding: 20px 35px;
+        padding: 15px 35px;
         color: c.$dark-color;
 
         & #nav-list {
@@ -494,7 +549,25 @@
         & img {
           width: 120px;
           cursor: pointer;
+
+          &:not(:last-child) {
+            margin-right: 20px;
+          }
         }
+      }
+    }
+
+    @keyframes slide {
+      0% {
+        transform: translateX(0%);
+      }
+
+      50% {
+        transform: translateX(-65%);
+      }
+
+      100% {
+        transform: translateX(0%);
       }
     }
 
