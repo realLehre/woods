@@ -1,3 +1,8 @@
+const preloader = document.querySelector('.preloader');
+window.addEventListener('load', () => {
+    preloader.classList.add('remove');
+})
+
 const header = document.querySelector('.header'),
       navBtn = document.querySelector('.nav-toggler'),
       nav = document.querySelector('#nav-list'),
