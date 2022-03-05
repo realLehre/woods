@@ -831,7 +831,7 @@
     & .header-items {
       & #nav-list {
         & .nav-item:nth-child(#{$i}) {
-          transition-delay: ($i * 0.1s) + 0.5s;
+          transition-delay: ($i * 0.1s);
         }
       }
     }
