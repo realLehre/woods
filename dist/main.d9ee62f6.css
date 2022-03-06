@@ -1034,7 +1034,7 @@ footer {
       transform: translateX(0%);
     }
     50% {
-      transform: translateX(-15vw);
+      transform: translateX(-25%);
     }
     100% {
       transform: translateX(0%);
@@ -1660,7 +1660,7 @@ footer {
       transform: translateX(0%);
     }
     50% {
-      transform: translateX(-90vw);
+      transform: translateX(-100vw);
     }
     100% {
       transform: translateX(0%);
