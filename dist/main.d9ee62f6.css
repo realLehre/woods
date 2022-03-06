@@ -1701,7 +1701,7 @@ footer {
       transform: translateX(0%);
     }
     50% {
-      transform: translateX(-145%);
+      transform: translateX(-155%);
     }
     100% {
       transform: translateX(0%);
