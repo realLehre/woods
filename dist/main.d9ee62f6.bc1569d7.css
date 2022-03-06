@@ -1365,6 +1365,7 @@ footer {
 
   .products {
     padding: 0 35px;
+    align-items: center;
   }
   .products .products-number {
     font-size: 55px;
@@ -1378,7 +1379,7 @@ footer {
     cursor: pointer;
   }
   .products .products-brands img:not(:last-child) {
-    margin-right: 20px;
+    margin-right: 30px;
   }
 
   @keyframes slide {

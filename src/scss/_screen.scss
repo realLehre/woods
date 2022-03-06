@@ -543,6 +543,7 @@
 
     .products {
       padding: 0 35px;
+      align-items: center;
 
       #{&}-number {
         font-size: map-get(c.$font-sizes, hero-main-text-mobile);
@@ -559,7 +560,7 @@
           cursor: pointer;
 
           &:not(:last-child) {
-            margin-right: 20px;
+            margin-right: 30px;
           }
         }
       }
