@@ -419,6 +419,10 @@ body {
   cursor: pointer;
 }
 
+#products-desc-main {
+  position: relative;
+}
+
 .for-product-desc {
   position: absolute;
   right: 0;
