@@ -494,6 +494,7 @@ body {
   width: 100%;
 }
 .products-desc .products-shelf {
+  margin-top: 50px;
   flex-direction: row-reverse;
 }
 .products-desc .products-shelf .products-desc-img {
