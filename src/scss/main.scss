@@ -401,12 +401,12 @@ body {
 
 #products-desc-main {
   position: relative;
-}
 
-.for-product-desc {
-  position: absolute;
-  right: 0;
-  top: 1000px;
+  & .for-product-desc {
+    position: absolute;
+    right: 0;
+    top: 400px;
+  }
 }
 
 .products-desc {

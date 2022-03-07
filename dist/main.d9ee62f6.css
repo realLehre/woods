@@ -422,11 +422,10 @@ body {
 #products-desc-main {
   position: relative;
 }
-
-.for-product-desc {
+#products-desc-main .for-product-desc {
   position: absolute;
   right: 0;
-  top: 1000px;
+  top: 400px;
 }
 
 .products-desc {
