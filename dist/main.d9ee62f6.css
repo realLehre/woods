@@ -422,6 +422,7 @@ body {
 .for-product-desc {
   position: absolute;
   right: 0;
+  top: 20%;
 }
 
 .products-desc {
