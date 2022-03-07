@@ -168,6 +168,12 @@
       }
     }
 
+    #products-desc-main {
+      & .for-product-desc {
+        display: none;
+      }
+    }
+
     .products-desc {
       padding: 0 35px;
 
