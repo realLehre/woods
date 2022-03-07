@@ -419,6 +419,10 @@ body {
   cursor: pointer;
 }
 
+.for-product-desc {
+  position: absolute;
+}
+
 .products-desc {
   max-width: 1400px;
   display: flex;

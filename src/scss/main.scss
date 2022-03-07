@@ -399,6 +399,10 @@ body {
   }
 }
 
+.for-product-desc {
+  position: absolute;
+}
+
 .products-desc {
   max-width: 1400px;
   @include c.flex(column);
