@@ -624,7 +624,7 @@
       & .products-shelf {
         flex-direction: row-reverse;
         @include c.flex(column);
-        margin-top: 40px;
+        margin-top: 25px;
 
         & .products-desc-img {
           width: 230px;
