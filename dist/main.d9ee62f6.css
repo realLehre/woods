@@ -1084,7 +1084,7 @@ footer {
     justify-content: space-between;
     align-items: center;
     flex-direction: column;
-    margin-top: -20px;
+    margin-top: 0px;
   }
   .products-desc .products-shelf .products-desc-img {
     width: 300px;
