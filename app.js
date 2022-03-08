@@ -29,6 +29,7 @@ navBtn.addEventListener('click', (e) =>{
 
 
 
+// close nav when link is clicked
 navItems.forEach(item => {
     item.addEventListener('click', () => {
         for(p = 0; p < navItems.length; p++){
