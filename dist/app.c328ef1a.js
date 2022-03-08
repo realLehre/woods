@@ -157,7 +157,8 @@ navItems.forEach(function (item) {
       navItem.classList.remove('slide');
     });
   });
-});
+}); // add box shadow to header when page is scrolled
+
 window.addEventListener('scroll', function () {
   if (window.scrollY > 35) {
     header.classList.add('bottom-border');

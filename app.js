@@ -45,6 +45,7 @@ navItems.forEach(item => {
     })
 })
 
+// add box shadow to header when page is scrolled
 window.addEventListener('scroll', ()=>{
     if(window.scrollY > 35 ){
         header.classList.add('bottom-border');
