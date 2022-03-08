@@ -22,7 +22,6 @@ navBtn.addEventListener('click', (e) =>{
     })
 
     if(e.target.classList.contains('nav-item')){
-        //    nav.classList.toggle('open');
         header.classList.remove('open');
     }
     console.log(e.target.classList);
