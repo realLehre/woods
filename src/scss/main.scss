@@ -633,6 +633,7 @@ body {
   }
 }
 
+// testimonials
 #testimonials {
   padding: 40px 60px;
   position: relative;
@@ -762,6 +763,7 @@ body {
   }
 }
 
+// newsletter
 #newsletter {
   max-width: 1400px;
   padding: 0 60px;
@@ -826,6 +828,7 @@ body {
   }
 }
 
+// footer
 footer {
   background: c.$maincolor;
 
@@ -916,6 +919,7 @@ footer {
   }
 }
 
+// media queries
 @include s.small-PCs;
 @include s.tablets;
 @include s.mobiles;
