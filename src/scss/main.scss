@@ -179,6 +179,7 @@ body {
       }
     }
 
+    // navigation links
     & #nav-list {
       @include c.flex(row);
       width: 400px;
@@ -232,6 +233,7 @@ body {
         margin-left: 15px;
       }
 
+      // nav toggle btn
       & .nav-toggler {
         width: 30px;
         height: 25px;
