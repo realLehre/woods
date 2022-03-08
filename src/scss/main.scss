@@ -393,9 +393,6 @@ body {
     margin-top: 20px;
     width: 100%;
     @include c.flex(row);
-    // overflow-x: scroll;
-
-    // flex-wrap: wrap;
 
     & img {
       width: 155px;
@@ -404,6 +401,7 @@ body {
   }
 }
 
+// products description
 #products-desc-main {
   position: relative;
 
