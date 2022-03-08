@@ -451,9 +451,7 @@
           transition: all 750ms ease-in-out;
           align-items: center;
           justify-content: center;
-          // transition-delay: 0.5s;
           overflow: hidden;
-          // z-index: 50;
 
           &.open {
             transform: translateY(0);
@@ -487,7 +485,6 @@
         & #nav-actions {
           position: relative;
           @include c.flex(row);
-          // z-index: 55;
 
           & i {
             cursor: pointer;
@@ -536,7 +533,6 @@
 
       & .hero-img-container {
         width: 100%;
-        // margin-bottom: 100px;
       }
     }
 
