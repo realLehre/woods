@@ -252,7 +252,6 @@ body {
           transform: rotate(-3198deg) translate(20.5px, 10px);
         }
         &.open .end {
-          // transform: rotate(-500deg) translate(0px, 8px);
           transform: rotate(-3198deg) translate(-20px, -10px);
         }
 
@@ -281,6 +280,7 @@ body {
   }
 }
 
+// hero section
 #hero-main {
   background: c.$sec-color;
   margin-top: 50px;
@@ -288,10 +288,8 @@ body {
 }
 .hero {
   max-width: 1400px;
-  // width: 90%;
   margin: 0 auto;
   padding: 0px 60px;
-  // padding-top: 25px;
   @include c.flex(row);
   position: relative;
   z-index: 1;
