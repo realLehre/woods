@@ -418,7 +418,6 @@ body {
   padding: 0 60px;
   margin: 0 auto;
   margin-bottom: 60px;
-  // overflow-x: hidden;
 
   #{&}-container {
     @include c.flex(row);
@@ -497,6 +496,7 @@ body {
   }
 }
 
+// products main
 #products-display {
   max-width: 1400px;
   @include c.flex(column);
