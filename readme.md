@@ -7,3 +7,4 @@
 ## Code system
 
 ### I used SCSS for the styling, quite intuitive and yeah, it's CSS *with super powers*
+### Animate on scroll [AOS] library for the animate on reveal effects
