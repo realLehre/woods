@@ -55,7 +55,7 @@ window.addEventListener('scroll', ()=>{
   
 })
 
-
+// testimonial slide
 const slides = document.querySelectorAll('.testimonial');
 
 slides[1].classList.add('active');
@@ -69,9 +69,7 @@ slides.forEach(slide => {
             index = p + 1;
         }
         slide.classList.add('active');
-
-    })
-    
+    })    
 })
 
 function plusSlides(n){
@@ -87,8 +85,7 @@ slideBtn.forEach(btn => {
 
         if(e.target.classList.contains('next')){
             plusSlides(1);
-        }
-       
+        }    
     }) 
 })
 
@@ -116,14 +113,13 @@ function showSlide(n){
     pointers[index -1].classList.add('active');
 }
 
+// back to top 
 const topBtn = document.querySelector('.to-top');
 window.addEventListener('scroll', () => {
     
     if(window.scrollY >=1000 ){
- 
         topBtn.classList.add('show')
-    } else {
-        
+    } else {  
         topBtn.classList.remove('show');
     }   
 })

@@ -165,7 +165,8 @@ window.addEventListener('scroll', function () {
   } else {
     header.classList.remove('bottom-border');
   }
-});
+}); // testimonial slide
+
 var slides = document.querySelectorAll('.testimonial');
 slides[1].classList.add('active');
 var index = 2;
@@ -218,7 +219,8 @@ function showSlide(n) {
 
   slides[index - 1].classList.add('active');
   pointers[index - 1].classList.add('active');
-}
+} // back to top 
+
 
 var topBtn = document.querySelector('.to-top');
 window.addEventListener('scroll', function () {
