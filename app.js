@@ -1,13 +1,16 @@
+// hide preloader on page load
 const preloader = document.querySelector('.preloader');
 window.addEventListener('load', () => {
     preloader.classList.add('remove');
 })
+
 
 const header = document.querySelector('.header'),
       navBtn = document.querySelector('.nav-toggler'),
       nav = document.querySelector('#nav-list'),
       navItems = document.querySelectorAll('.nav-item');
      
+// open nav on mobile  
 navBtn.addEventListener('click', (e) =>{
     navBtn.classList.toggle('open');
     nav.classList.toggle('open');

@@ -118,6 +118,7 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 
   return newRequire;
 })({"app.js":[function(require,module,exports) {
+// hide preloader on page load
 var preloader = document.querySelector('.preloader');
 window.addEventListener('load', function () {
   preloader.classList.add('remove');
@@ -125,7 +126,8 @@ window.addEventListener('load', function () {
 var header = document.querySelector('.header'),
     navBtn = document.querySelector('.nav-toggler'),
     nav = document.querySelector('#nav-list'),
-    navItems = document.querySelectorAll('.nav-item');
+    navItems = document.querySelectorAll('.nav-item'); // open nav on mobile  
+
 navBtn.addEventListener('click', function (e) {
   navBtn.classList.toggle('open');
   nav.classList.toggle('open');
