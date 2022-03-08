@@ -1,3 +1,4 @@
+// external scss files
 @use 'config' as c;
 @use 'screen' as s;
 
@@ -7,6 +8,7 @@
     transition-timing-function: cubic-bezier(0.25, 0.25, 0.75, 0.75);
   }
 }
+
 body {
   background: white;
   font-family: 'Nunito', sans-serif;
