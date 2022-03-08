@@ -44,7 +44,6 @@ navItems.forEach(item => {
     })
     })
 })
-navItems[0].classList.add('show');
 
 window.addEventListener('scroll', ()=>{
     if(window.scrollY > 35 ){

@@ -158,7 +158,6 @@ navItems.forEach(function (item) {
     });
   });
 });
-navItems[0].classList.add('show');
 window.addEventListener('scroll', function () {
   if (window.scrollY > 35) {
     header.classList.add('bottom-border');
@@ -259,7 +258,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "64156" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "51969" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
